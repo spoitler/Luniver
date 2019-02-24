@@ -9,8 +9,9 @@
         </div>
         <div class="nav-wrapper">
             <ul>
-                <li class="current"><a href="boutique.php">BOUTIQUE</a></li>
-                <li><a href="#">A PROPOS</a></li>
+                <li class="current"><a href="index.php">ACCUEIL</a></li>
+                <li><a href="boutique.php">BOUTIQUE</a></li>
+                <li><a href="a_propos.php">A PROPOS</a></li>
                 <li><a href="#">REVENDEUR</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>

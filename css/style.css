@@ -182,7 +182,7 @@ nav .toggle-active span:last-of-type {
 
 .title_tel{
   position: absolute;
-  top: 10%;
+  top: 11%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
@@ -194,6 +194,51 @@ nav .toggle-active span:last-of-type {
 }
 
 #container_home p{
+  background-color: rgb(61, 61, 61);
+  height: 220px;
+  margin: 0 0 5px 0;
+  color: #fff;
+  text-align: center;
+  font-size: 80px;
+}
+
+/*******************\
+    PAGE BOUTIQUE
+\*******************/
+
+#container_shop{
+  position: relative;
+  top: 140px;
+  text-align: center;
+}
+
+#container_shop p{
+  display: inline-block;
+  margin: 0 20px 30px 20px;
+}
+
+#container_shop img{
+  height: 113px;
+  width: auto;
+}
+
+/*******************\
+    PAGE A PROPOS
+\*******************/
+
+#title_about_us{
+  position: absolute;
+  top: 100px;
+}
+
+#content_about_us{
+  position: relative;
+  height: auto;
+  top: 120px;
+  text-align: center;
+}
+
+#picture_about_us{
   background-color: rgb(61, 61, 61);
   height: 220px;
   margin: 0 0 5px 0;
