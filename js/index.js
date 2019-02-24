@@ -1,0 +1,9 @@
+// just a concept, just for fun //
+
+// Nav Toggle //
+$( ".toggle" ).click(function() {
+  $( this ).toggleClass( "toggle-active" );
+  $( ".nav-wrapper" ).toggleClass( "nav-wrapper-active" );
+  $(".nav-overlay").fadeToggle(300);
+  $("ul").toggleClass('active');
+});

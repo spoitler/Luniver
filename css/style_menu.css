@@ -1,0 +1,250 @@
+body, html {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+/******************\
+        MENU
+\******************/
+
+nav {
+  width: 110px;
+  height: 100%;
+  position: absolute;
+  z-index: 9999;
+}
+
+nav .toggle {
+  width: 40px;
+  height: 40px;
+  /*border: 3px solid #000;*/
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  transform: rotateZ(45deg) translateX(0px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+nav .toggle .burger {
+  position: relative;
+  width: 20px;
+  top: 13px;
+  left: 10px;
+  -webkit-transform: rotateZ(135deg) translateX(0px);
+  transform: rotateZ(135deg) translateX(0px);
+}
+
+nav .toggle span {
+  width: 20px;
+  height: 2px;
+  background: #000;
+  margin-bottom: 4px;
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav .toggle-active {
+  position: fixed;
+  -webkit-transform: rotateZ(225deg) translateX(0px);
+  transform: rotateZ(225deg) translateX(0px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav .toggle-active span:first-child {
+  opacity: 1;
+  top: 6px;
+  position: relative;
+  visibility: visible;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+nav .toggle-active span {
+  opacity: 0;
+  visibility: hidden;
+}
+
+nav .toggle-active span:last-of-type {
+  opacity: 1;
+  position: relative;
+  top: -6px;
+  visibility: visible;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.nav-wrapper {
+  width: 80%;
+  height: 100%;
+  background: #ECECEC;
+  display: block;
+  position: fixed;
+  left: -100%;
+  background: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-wrapper ul {
+  position: absolute;
+  width: 100%;
+  top: 140px;
+  left: -100px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 35px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.nav-wrapper ul li {
+  width: 100%;
+  height: 65px;
+  padding-left: 30px;
+  position: relative;
+  display: table;
+  font-weight: bold;
+}
+
+.nav-wrapper ul li:before {
+  content: " ";
+  width: 5px;
+  height: 100%;
+  background: #34E27D;
+  position: absolute;
+  left: -10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.nav-wrapper ul li:hover:before {
+  left: 0;
+}
+
+.nav-wrapper ul li a {
+  vertical-align: middle;
+  display: table-cell;
+  margin: 0;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-wrapper ul .current:before {
+  content: " ";
+  width: 5px;
+  height: 100%;
+  background: #34E27D;
+  position: absolute;
+  left: 0;
+}
+
+.nav-wrapper .active {
+  left: 0;
+  opacity: 1;
+}
+
+.nav-wrapper-active {
+  width: 80%;
+  left: 0px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
+.nav-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #ccc;
+  z-index: 5;
+  display: none;
+}
+
+/********************\
+    PAGE D'ACCUEIL
+\********************/
+
+.title_tel{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#container_home{
+  height: auto;
+  position: relative;
+  top: 120px;
+}
+
+#container_home p{
+  background-color: rgb(61, 61, 61);
+  height: 220px;
+  margin: 0 0 5px 0;
+  color: #fff;
+  text-align: center;
+  font-size: 80px;
+}
+
+/****************\
+      FOOTER
+\****************/
+
+footer{
+  position: relative;
+  top: 170px;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.social_media{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+ /* top: 50%;
+  left: 50%;
+  transform: translate(-50%,-20%);*/
+  width:100%;
+  height: auto;
+  justify-content: center;
+}
+
+
+.social_icones{
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+.conditions_ventes{
+  position: relative;
+}
+
+.conditions_ventes p{
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.copyright{
+  text-align: center;
+  padding-bottom: 5px;
+  color: rgb(109, 109, 109);
+}
