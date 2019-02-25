@@ -4,7 +4,7 @@
 body, html {
   margin: 0;
   font-family: Arial, sans-serif;
-  height: auto;
+  min-height: 100vh;
 }
 
 a{
@@ -294,9 +294,8 @@ nav .toggle-active span:last-of-type {
 
 #title_contact{
   position: relative;
-  top: 120px;
+  top: 150px;
   height: auto;
-  width: 100%;
   text-align: center;
   margin: 0 10px 0 10px;
 }
@@ -304,7 +303,7 @@ nav .toggle-active span:last-of-type {
 /*form styles*/
 #msform {
 	position: relative;
-  top: 150px;
+  top: 160px;
   font-family: 'montserrat', arial, verdana;
 	width: 100%;
 	text-align: center;
@@ -355,14 +354,15 @@ nav .toggle-active span:last-of-type {
 	color: #2C3E50;
 	margin-bottom: 10px;
 }
+
 /****************\
       FOOTER
 \****************/
 
 footer{
-  position: relative;
-  bottom: -150px;
-  height: 100px;
+  position: absolute;
+  bottom: 0;
+  height: auto;
   width: 100%;
   margin-bottom: 20px;
 }

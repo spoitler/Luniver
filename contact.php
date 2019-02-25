@@ -10,7 +10,7 @@
     <body>
         <?php include("menu.php"); ?>
         <div id="title_contact">
-            <h3>une question ? un problème ? contactez - nous.</h3>
+            <p>une question ? un problème ? <br>contactez - nous.</p>
         </div>
         <form id="msform">
             <fieldset>
