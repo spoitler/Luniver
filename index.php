@@ -10,9 +10,6 @@
    </head>
    <body>
       <?php include("menu.php"); ?>
-      <div class="title_tel">
-         <h1><a href="index.php">LUNIVER</a></h1>
-      </div>
       <div id="container_home">
          <p>
             <a href="#"><img src="" alt=""></a>

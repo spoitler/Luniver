@@ -1,5 +1,3 @@
-// just a concept, just for fun //
-
 // Nav Toggle //
 $( ".toggle" ).click(function() {
   $( this ).toggleClass( "toggle-active" );
