@@ -14,6 +14,7 @@
                 <li><a href="a_propos.php">A PROPOS</a></li>
                 <li><a href="revendeur.php">REVENDEUR</a></li>
                 <li><a href="contact.php">CONTACT</a></li>
+                <li><a href="inscription.php">MON COMTPE</a></li>
             </ul>
         </div>
     </nav>
