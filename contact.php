@@ -12,13 +12,15 @@
         <div id="title_contact">
             <p>une question ? un problème ? <br>contactez - nous.</p>
         </div>
-        <form id="msform">
-            <fieldset>
-                <input type="text" name="email" placeholder="Email"/>
-                <textarea type="text" name="message" placeholder="Message" cols="30" rows="5"></textarea>
-                <input type="submit" name="submit" class="submit action-button" value="Submit" />
-            </fieldset>
-        </form>
+        <div id="form_contact">
+            <form id="msform">
+                <fieldset>
+                    <input type="text" name="email" placeholder="Email"/>
+                    <textarea type="text" name="message" placeholder="Message" cols="30" rows="5"></textarea>
+                    <input type="submit" name="submit" class="submit action-button" value="Submit" />
+                </fieldset>
+            </form>
+        </div>
         <?php include("footer.php"); ?>
     </body>
 </html>

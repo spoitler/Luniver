@@ -16,7 +16,6 @@
             <input type="text" name="lname" placeholder="Nom"/>
             <input type="text" name="fname" placeholder="Prénom"/>
             <input type="date" name="date_naissance" placeholder="date de naissance"/>
-
             <input type="text" name="email" placeholder="Email"/>
             <input type="password" name="pass" placeholder="Mot de passe"/>
             <input type="password" name="cpass" placeholder="Confirmation Mot de passe"/>

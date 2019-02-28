@@ -13,7 +13,7 @@
             <h1>À PROPOS DE NOUS</h1>
         </div>
         <div id="container_about_us">
-            <p id="picture_about_us">
+            <p id="picture_about_stockist">
                 <img src="img/athlete_foot.jpg" alt="">
             </p>
             <p id="text_about_us">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo diam libero, id lacinia dui euismod eget. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean congue justo quis ante rutrum suscipit. Nam nec vestibulum lacus. Integer vel aliquet elit. Suspendisse gravida condimentum dolor, non scelerisque neque gravida a. Proin ullamcorper aliquet consectetur.</p>

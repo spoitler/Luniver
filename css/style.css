@@ -231,22 +231,20 @@ nav .toggle-active span:last-of-type {
 \*******************/
 
 #title_about_us{
-  position: relative;
+  position: absolute;
   top: 120px;
   height: auto;
   width: 100%;
 }
 
 #title_about_us h1{
-  width: 100%;
-  height: auto;
   text-align: center;
   font-size: 27px;
 }
 
 #container_about_us{
   position: relative;
-  top: 130px;
+  top: 190px;
   height: auto;
   text-align: center;
 }
@@ -256,8 +254,8 @@ nav .toggle-active span:last-of-type {
   width: 100%;
 }
 
-#picture_about_us{
-  background-color: rgb(61, 61, 61);
+#picture_about_stockist{
+  /*background-color: rgb(61, 61, 61);*/
   margin: 0 0 5px 0;
   text-align: center;
 }
@@ -270,17 +268,22 @@ nav .toggle-active span:last-of-type {
     PAGE REVENDEUR
 \********************/
 
-#container_stockist{
-  position: relative;
+.title_stockist{
+  position: absolute;
   top: 120px;
-  width: 100%;
   height: auto;
+  width: 100%;
+}
+
+.title_stockist h3{
   text-align: center;
 }
 
 .content_stockist{
   position: relative;
-  top: 10px;
+  top: 180px;
+  height: auto;
+  text-align: center;
 }
 
 .content_stockist img{
@@ -293,17 +296,20 @@ nav .toggle-active span:last-of-type {
 \******************/
 
 #title_contact{
-  position: relative;
-  top: 150px;
+  position: absolute;
+  top: 130px;
   height: auto;
+  width: 100%;
+}
+
+#title_contact p{
   text-align: center;
-  margin: 0 10px 0 10px;
 }
 
 /*form styles*/
 #msform {
 	position: relative;
-  top: 135px;
+  top: 250px;
   font-family: 'montserrat', arial, verdana;
 	width: 100%;
 	text-align: center;
@@ -374,13 +380,17 @@ nav .toggle-active span:last-of-type {
   width: 9px;
 }
 
+.checkbox_inscription input[type="radio"]{
+  -webkit-appearance: radio;
+}
+
 /****************\
       FOOTER
 \****************/
 
 footer{
   position: relative;
-  bottom: -150px;
+  bottom: -250px;
   height: auto;
   width: 100%;
   margin-bottom: 20px;
