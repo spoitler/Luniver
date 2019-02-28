@@ -11,6 +11,7 @@
     <?php include("menu.php"); ?>
     <!-- multistep form -->
     <form action="newclient.php" method="post" class="msform form_inscription">
+    <input name="sexe" type="radio" value="Homme" ><p>Homme</p>
         <fieldset>
             <h2 class="fs-title">Création de votre comtpe</h2>
             <input type="text" name="lname" placeholder="Nom"/>
@@ -26,7 +27,11 @@
             <p>Civilité : </p>
             <div class="checkbox_inscription">
                <!-- <input name="sexe" type="radio" value="Homme" ><p>Homme</p>-->
-                <input type="radio" id="contactChoice1" name="contact" value="email"><label for="contactChoice1">Email</label>
+               <div>
+                    <input type="radio" id="huey" name="drone" value="huey"
+                            checked>
+                    <label for="huey">Huey</label>
+                </div>
             </div>
             <div class="checkbox_inscription">
                 <input name="sexe" type="radio" value="Femme"><p>Femme</p>
