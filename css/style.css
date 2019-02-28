@@ -324,6 +324,10 @@ nav .toggle-active span:last-of-type {
   border: 0 none;	
 }
 
+#form_contact_content{
+  margin-bottom: 100px; 
+}
+
 /*inputs*/
 .msform input, .msform textarea {
 	padding: 15px;
@@ -404,7 +408,7 @@ nav .toggle-active span:last-of-type {
 
 footer{
   position: relative;
-  bottom: -250px;
+  bottom: -200px;
   height: auto;
   width: 100%;
   margin-bottom: 20px;

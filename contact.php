@@ -14,7 +14,7 @@
         </div>
         <div id="form_contact">
             <form class="msform">
-                <fieldset>
+                <fieldset id="form_contact_content">
                     <input type="text" name="email" placeholder="Email"/>
                     <textarea type="text" name="message" placeholder="Message" cols="30" rows="5"></textarea>
                     <input type="submit" name="submit" class="submit action-button" value="Submit" />
