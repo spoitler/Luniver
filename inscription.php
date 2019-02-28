@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>LUNIVER</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
 </head>
@@ -24,7 +24,7 @@
             <input type="text" name="postalc" placeholder="Code postal" required/>
         </fieldset>
         <div>
-            <p>Sexe : </p>
+            <p>Sexe :</p>
             <div id="civilite_inscription">
                 <div class="checkbox_inscription">
                     <input name="sexe" type="radio" value="Homme"><p>Homme</p>
@@ -36,7 +36,7 @@
         </div>
         <div id="submit_inscription">
             <input type="submit" name="submit" class="submit action-button" value="Submit" />
-            <p><a href="#">J'ai déjà un compte</a></p>
+            <p><a href="connexion.php">J'ai déjà un compte</a></p>
         </div>
     </form>
     <?php include("footer.php"); ?>
