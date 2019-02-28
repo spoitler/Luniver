@@ -11,7 +11,6 @@
     <?php include("menu.php"); ?>
     <!-- multistep form -->
     <form action="newclient.php" method="post" class="msform form_inscription">
-    <input name="sexe" type="radio" value="Homme" ><p>Homme</p>
         <fieldset>
             <h2 class="fs-title">Création de votre comtpe</h2>
             <input type="text" name="lname" placeholder="Nom"/>
@@ -24,21 +23,22 @@
             <input type="text" name="adresse" placeholder="Adresse"/>
             <input type="text" name="ville" placeholder="Ville"/>
             <input type="text" name="postalc" placeholder="Code postal" />
+        </fieldset>
+        <div>
             <p>Civilité : </p>
-            <div class="checkbox_inscription">
-               <!-- <input name="sexe" type="radio" value="Homme" ><p>Homme</p>-->
-               <div>
-                    <input type="radio" id="huey" name="drone" value="huey"
-                            checked>
-                    <label for="huey">Huey</label>
+            <div id="civilite_inscription">
+                <div class="checkbox_inscription">
+                    <input name="sexe" type="radio" value="Homme"><p>Homme</p>
+                </div>
+                <div class="checkbox_inscription">
+                    <input name="sexe" type="radio" value="Femme"><p>Femme</p>
                 </div>
             </div>
-            <div class="checkbox_inscription">
-                <input name="sexe" type="radio" value="Femme"><p>Femme</p>
-            </div>
+        </div>
+        <div id="submit_inscription">
             <input type="submit" name="submit" class="submit action-button" value="Submit" />
-        </fieldset>
-        <a href="#">J'ai déjà un compte</a>
+            <p><a href="#">J'ai déjà un compte</a></p>
+        </div>
     </form>
     <?php include("footer.php"); ?>
 </body>

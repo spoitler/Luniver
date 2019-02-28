@@ -369,9 +369,15 @@ nav .toggle-active span:last-of-type {
   top: 130px;
 }
 
+#civilite_inscription{
+  margin: 25px 0 0 0;  
+}
+
 .checkbox_inscription{
   display: flex;
-  width: 10%;
+  width: 100%;
+  justify-content: center;
+  padding: 0 0 15px 0;
 }
 
 .checkbox_inscription p{
@@ -384,8 +390,12 @@ nav .toggle-active span:last-of-type {
   width: 9px;
 }
 
-.checkbox_inscription input[type="radio"]{
-  -webkit-appearance: radio;
+#submit_inscription{
+  margin: 15px 0 0 0;
+}
+
+#submit_inscription p{
+  padding: 15px 0 0 0;
 }
 
 /****************\
