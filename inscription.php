@@ -25,7 +25,8 @@
             <input type="text" name="postalc" placeholder="Code postal" />
             <p>Civilité : </p>
             <div class="checkbox_inscription">
-                <input name="sexe" type="radio" value="Homme" ><p>Homme</p>
+               <!-- <input name="sexe" type="radio" value="Homme" ><p>Homme</p>-->
+                <input type="radio" id="contactChoice1" name="contact" value="email"><label for="contactChoice1">Email</label>
             </div>
             <div class="checkbox_inscription">
                 <input name="sexe" type="radio" value="Femme"><p>Femme</p>
