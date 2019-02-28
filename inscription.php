@@ -10,7 +10,7 @@
 <body>
     <?php include("menu.php"); ?>
     <!-- multistep form -->
-    <form action="newclient.php" method="post" id="msform">
+    <form action="newclient.php" method="post" class="msform form_inscription">
         <fieldset>
             <h2 class="fs-title">Création de votre comtpe</h2>
             <input type="text" name="lname" placeholder="Nom"/>

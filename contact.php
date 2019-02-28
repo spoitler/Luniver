@@ -13,7 +13,7 @@
             <p>une question ? un problème ? <br>contactez - nous.</p>
         </div>
         <div id="form_contact">
-            <form id="msform">
+            <form class="msform">
                 <fieldset>
                     <input type="text" name="email" placeholder="Email"/>
                     <textarea type="text" name="message" placeholder="Message" cols="30" rows="5"></textarea>
