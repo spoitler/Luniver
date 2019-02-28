@@ -11,7 +11,7 @@
    <body>
       <?php
       try{
-          $bdd = new PDO('mysql:host=localhost;dbname=luniver', 'admin', 'RATAL5');
+          $bdd = new PDO('mysql:host=localhost;dbname=luniver', 'root', '');
 
       }catch (Exception $e){
           $bdd = null;

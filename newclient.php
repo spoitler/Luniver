@@ -19,13 +19,13 @@ $prenom = postVar("fname");
 $date_naissance = postVar("date_naissance");
 $email = postVar("email");
 $password = postVar("pass");
-$cpassword = postVar("cpass");
 $telephone = postVar("phone");
 $adresse = postVar("adresse");
 $ville = postVar("ville");
 $postalc = postVar("postalc");
+$sexe = postVar("sexe");
 
-if ( $nom && $prenom && $email && $password && $cpassword && $telephone && $adresse && $ville && $postalc)
+if ( $nom && $prenom && $date_naissance && $email && $password && $telephone && $adresse && $ville && $postalc && $sexe)
 {
     $bdd = getbdd();
 
@@ -33,9 +33,7 @@ if ( $nom && $prenom && $email && $password && $cpassword && $telephone && $adre
 
     $password = password_hash($password, PASSWORD_DEFAULT);
 
-    $query = "INSERT INTO client(nom_client, prenom_client, date_naissance, civilite, adresse, telephone, ville, code_postal, password) VALUES (:nom,:prenom,:date_naissance,:civilite,:adresse,:telephone,:ville,:postalc,:password)";
-
-
+    $query = "INSERT INTO client( nom_client, prenom_client, date_naissance, email, sexe, adresse, telephone, ville, code_postal, password) VALUES (:nom,:prenom,:date_naissance, :email, :sexe,:adresse,:telephone,:ville,:postalc,:password)";
 
     $result = $bdd->prepare($query);
 
@@ -44,9 +42,15 @@ if ( $nom && $prenom && $email && $password && $cpassword && $telephone && $adre
     $result->bindParam(":date_naissance", $date_naissance);
     $result->bindParam(":email", $email);
     $result->bindParam(":password", $password);
+    $result->bindParam(":telephone", $telephone);
+    $result->bindParam(":adresse", $adresse);
+    $result->bindParam(":ville", $ville);
+    $result->bindParam(":postalc", $postalc);
+    $result->bindParam(":sexe", $sexe);
 
+    $result->execute();
+
+    header('Location: index.php');
 
 
 }
-
-

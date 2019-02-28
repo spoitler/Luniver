@@ -13,19 +13,18 @@
     <form action="newclient.php" method="post" class="msform form_inscription">
         <fieldset>
             <h2 class="fs-title">Création de votre comtpe</h2>
-            <input type="text" name="lname" placeholder="Nom"/>
-            <input type="text" name="fname" placeholder="Prénom"/>
-            <input type="date" name="date_naissance" placeholder="date de naissance"/>
-            <input type="text" name="email" placeholder="Email"/>
-            <input type="password" name="pass" placeholder="Mot de passe"/>
-            <input type="password" name="cpass" placeholder="Confirmation Mot de passe"/>
-            <input type="text" name="phone" placeholder="Téléphone"/>
-            <input type="text" name="adresse" placeholder="Adresse"/>
-            <input type="text" name="ville" placeholder="Ville"/>
-            <input type="text" name="postalc" placeholder="Code postal" />
+            <input type="text" name="lname" placeholder="Nom" required/>
+            <input type="text" name="fname" placeholder="Prénom" required/>
+            <input type="date" name="date_naissance" placeholder="date de naissance" required/>
+            <input type="email" name="email" placeholder="Email" required/>
+            <input type="password" name="pass" placeholder="Mot de passe" required/>
+            <input type="text" name="phone" placeholder="Téléphone" required/>
+            <input type="text" name="adresse" placeholder="Adresse" required/>
+            <input type="text" name="ville" placeholder="Ville" required/>
+            <input type="text" name="postalc" placeholder="Code postal" required/>
         </fieldset>
         <div>
-            <p>Civilité : </p>
+            <p>Sexe : </p>
             <div id="civilite_inscription">
                 <div class="checkbox_inscription">
                     <input name="sexe" type="radio" value="Homme"><p>Homme</p>
