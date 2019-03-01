@@ -10,7 +10,7 @@
     <body>
         <?php include("menu.php"); ?>
         <div id="title_about_us">
-            <h1>À PROPOS DE NOUS</h1>
+            <h2>À PROPOS DE NOUS</h2>
         </div>
         <div id="container_about_us">
             <p id="picture_about_stockist">
