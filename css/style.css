@@ -1,5 +1,14 @@
 /* FONT POUR PAGE CONTACT ET INSCRIPTIONS/CONNEXION*/
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+/*@import url(https://fonts.googleapis.com/css?family=Montserrat);*/
+
+@font-face{
+  font-family: "luniver";
+  src: url('../font/Josephin.ttf');
+}
+
+h1{
+  font-family: "luniver";
+}
 
 body, html {
   margin: 0;
