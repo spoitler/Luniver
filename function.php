@@ -3,8 +3,8 @@
 function getbdd(){
 	$host = "localhost";
     $dbName = "luniver";
-    $login = "admin";
-    $password = "RATAL5";
+    $login = "root";
+    $password = "";
 
     try
     {
