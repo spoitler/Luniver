@@ -1,40 +1,43 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>LUNIVER</title>
-</head>
-<body>
+<?php
+
+session_start();
+
+?>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>LUNIVER</title>
+    </head>
+    <body>
     <?php include("function.php"); ?>
-    
-</body>
-</html>
 
-<?php 
+    </body>
+    </html>
 
-    $email = postVar("email");
-    $password = postVar("password");
+<?php
 
-    if ($email && $password){
-        $bdd = getbdd();
+$email = postVar("email");
+$password = postVar("password");
 
-        echo "connecté a la bdd<br>";
+$_SESSION['email'] = $email;
 
-        $query = "SELECT email,password FROM client ";
+if ($email && $password){
+    $bdd = getbdd();
 
-        $verification = $bdd->prepare($query);
-        $verification->bindParam(":email", $email);
-        $verification->execute();
-        $resultat = $verification->fetch();
-        $passwordCorrect = password_verify($password, $resultat['password']);
+    echo "connecté a la bdd<br>";
 
-        if ($passwordCorrect && $email == $resultat['email']){
-            echo "connecté";
-            header('Location: index.php');
-        }else{
-            echo "Identifiant ou mot de passe invalid";
-            header('Location: connexion.php');
-        }
+    $query = "SELECT email, password FROM client ";
 
+    $verification = $bdd->prepare($query);
+    $verification->bindParam(":email", $email);
+    $verification->execute();
+    $resultat = $verification->fetch();
+    $passwordCorrect = password_verify($password, $resultat['password']);
+
+    if ($passwordCorrect && $_SESSION['email'] == $resultat['email']) {
+        echo "connecté";
+        header('Location: donnees_personnel.php');
+    }
 
 }

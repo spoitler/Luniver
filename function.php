@@ -3,8 +3,8 @@
 function getbdd(){
 	$host = "localhost";
     $dbName = "luniver";
-    $login = "admin";
-    $password = "RATAL5";
+    $login = "root";
+    $password = "";
 
     try
     {
@@ -39,4 +39,18 @@ function postVar($name) {
 	return FALSE;
 }
 
+function getAllClient(PDO $bdd, $email) {
+    // La requete de base
+    $query = "SELECT nom_client, prenom_client, date_naissance, email, sexe, adresse, telephone, ville, code_postal FROM client WHERE email=:email";
+    // On récupère tout le contenu de la table
+
+    $resultat = $bdd->prepare($query);
+
+    $resultat->bindParam(":email", $email);
+
+    $resultat->execute();
+
+    return $resultat->fetch(PDO::FETCH_OBJ);
+
+}
 

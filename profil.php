@@ -10,12 +10,6 @@
     <body>
         <?php include("menu.php"); ?>
 
-        <div>
-            <p>Commandes</p>
-            <p>Moyens de Paiement</p>
-            <p>Adresse</p>
-            <p>Données Personnel</p>
-        </div>
 
 
         <?php incldue("footer.php"); ?>
