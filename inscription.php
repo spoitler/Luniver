@@ -17,7 +17,14 @@
             <input type="text" name="fname" placeholder="Prénom" required/>
             <input type="date" name="date_naissance" placeholder="date de naissance" required/>
             <input type="email" name="email" placeholder="Email" required/>
-            <input type="password" name="pass" placeholder="Mot de passe" required/>
+            <div id="password_inscri">
+                <input type="password" value="" placeholder="Mot de passe" id="password" class="password" required>
+                <button class="unmask" type="button" title="Mask/Unmask password to check content">Unmask</button>
+            </div>
+            <div id="password_inscri">
+                <input type="password" value="" placeholder="Confirmation mot de passe" id="confirm_password" class="password" required>
+                <button class="unmask" type="button" title="Mask/Unmask password to check content">Unmask</button>
+            </div>
             <input type="text" name="phone" placeholder="Téléphone" required/>
             <input type="text" name="adresse" placeholder="Adresse" required/>
             <input type="text" name="ville" placeholder="Ville" required/>
@@ -40,22 +47,8 @@
         </div>
     </form>
     <?php include("footer.php"); ?>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="js/password.js"></script>
+    <script src="js/confirm_password"></script>
 </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-
 </html>
