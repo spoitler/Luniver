@@ -15,14 +15,14 @@ $nom = postVar("lname");
 $prenom = postVar("fname");
 $date_naissance = postVar("date_naissance");
 $email = postVar("email");
-$password = postVar("pass");
+$password = postVar("password");
 $telephone = postVar("phone");
 $adresse = postVar("adresse");
 $ville = postVar("ville");
 $postalc = postVar("postalc");
 $sexe = postVar("sexe");
 
-if ( $nom && $prenom && $date_naissance && $email && $password && $telephone && $adresse && $ville && $postalc && $sexe)
+if ($nom && $prenom && $date_naissance && $email && $password && $telephone && $adresse && $ville && $postalc && $sexe)
 {
     $bdd = getbdd();
 

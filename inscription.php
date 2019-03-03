@@ -18,7 +18,7 @@
             <input type="date" name="date_naissance" placeholder="date de naissance" required/>
             <input type="email" name="email" placeholder="Email" required/>
             <div id="password_inscri">
-                <input type="password" value="" placeholder="Mot de passe" id="password" class="password" required>
+                <input type="password" name="password" placeholder="Mot de passe" id="password" class="password" required/>
                 <button class="unmask" type="button" title="Mask/Unmask password to check content">Unmask</button>
             </div>
             <div id="password_inscri">

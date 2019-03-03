@@ -27,7 +27,7 @@ if ($email && $password){
 
     echo "connecté a la bdd<br>";
 
-    $query = "SELECT email, password FROM client ";
+    $query = "SELECT email, password FROM client WHERE email=:email";
 
     $verification = $bdd->prepare($query);
     $verification->bindParam(":email", $email);
@@ -35,9 +35,9 @@ if ($email && $password){
     $resultat = $verification->fetch();
     $passwordCorrect = password_verify($password, $resultat['password']);
 
-    if ($passwordCorrect && $_SESSION['email'] == $resultat['email']) {
+    if ($passwordCorrect) {
         echo "connecté";
-        header('Location: donnees_personnel.php');
+        header('Location: recupdonneeperso.php');
     }
 
 }
