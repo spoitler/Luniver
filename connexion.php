@@ -23,7 +23,7 @@
             <input type="password" name="password" placeholder="Mot de passe" required/>
         </fieldset>
         <div id="submit_inscription">
-            <input type="submit" name="submit" class="submit action-button" value="Submit" />
+            <button type="submit" name="submit" class="submit action-button" value="Submit">Submit</button>
             <p><a href="inscription.php">Je n'ai pas encore de compte</a></p>
         </div>
     </form>
