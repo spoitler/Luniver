@@ -50,7 +50,7 @@ if (empty($_SESSION['email'])){
                 </div>
             </div>
             <div id="submit_info_perso">
-                <input type="submit" name="submit" class="submit action-button" value="Mettre à jour" />
+                <button type="submit" name="submit" class="submit action-button" value="Submit">Mettre à jour</button>
             </div>
         </form>
         <?php  include("footer.php"); ?>
