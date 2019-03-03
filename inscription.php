@@ -6,6 +6,7 @@
     <title>LUNIVER</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+
 </head>
 <body>
     <?php include("menu.php"); ?>
@@ -47,7 +48,6 @@
         </div>
     </form>
     <?php include("footer.php"); ?>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script  src="js/password.js"></script>
     <script src="js/confirm_password"></script>
 </body>

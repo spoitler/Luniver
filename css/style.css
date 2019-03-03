@@ -1,5 +1,4 @@
 /* FONT POUR PAGE CONTACT ET INSCRIPTIONS/CONNEXION*/
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 @font-face{
   font-family: "luniver";
@@ -18,7 +17,7 @@ body, html {
 
 a{
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #000;
 }
 
 /******************\
@@ -270,7 +269,7 @@ nav .toggle-active span:last-of-type {
 }
 
 #text_about_us{
-  margin: 20  px 15px 0 15px;
+  margin: 20px 15px 0 15px;
 }
 
 /********************\
@@ -317,11 +316,11 @@ nav .toggle-active span:last-of-type {
 
 /*form styles*/
 .msform {
-	position: relative;
+  position: relative;
   top: 250px;
-  font-family: 'montserrat', arial, verdana;
-	width: 100%;
-	text-align: center;
+  font-family: arial, verdana;
+  width: 100%;
+  text-align: center;
 }
 
 .msform fieldset {
@@ -345,7 +344,6 @@ nav .toggle-active span:last-of-type {
 	margin-bottom: 15px;
 	width: 100%;
 	box-sizing: border-box;
-	font-family: 'montserrat';
 	color: #2C3E50;
 	font-size: 13px;
 }
