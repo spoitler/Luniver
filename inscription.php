@@ -43,7 +43,7 @@
             </div>
         </div>
         <div id="submit_inscription">
-            <input type="submit" name="submit" class="submit action-button" value="Submit" />
+            <button type="submit" name="submit" class="submit action-button" value="Submit">Submit</button>
             <p><a href="connexion.php">J'ai déjà un compte</a></p>
         </div>
     </form>
