@@ -10,8 +10,23 @@
     <body>
         <?php include("menu.php"); ?>
 
+        <div id="container_profil">
+            <div>
+                <h3>Commandes</h3>
+            </div>
+            <div>
+                <h3>Favoris</h3>
+            </div>
+            <div>
+                <h3>Données Personnelle</h3>
+            </div>
+            <div>
+                <h3>Modification Mot de passe</h3>
+            </div>
+        </div>
 
 
-        <?php incldue("footer.php"); ?>
+
+        <?php include("footer.php"); ?>
     </body>
 </html>

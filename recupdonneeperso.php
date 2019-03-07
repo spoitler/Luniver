@@ -12,6 +12,5 @@ if (empty($_SESSION['email'])){
 
     $donnees = getAllClient($bdd, $_SESSION['email']);
 
-   header("Location: donnees_personnel.php");
-
+   header("Location: donnees_personnelle.php");
 }

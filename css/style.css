@@ -450,6 +450,17 @@ nav .toggle-active span:last-of-type {
   border-radius: 50%;
 }
 
+/*****************\
+    PAGE PROFIL
+\*****************/
+
+#container_profil{
+  position: relative;
+  top: 150px;
+  height: auto;
+  text-align: center;
+}
+
 /****************\
       FOOTER
 \****************/
