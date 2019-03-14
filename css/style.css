@@ -1,23 +1,24 @@
 /* FONT POUR PAGE CONTACT ET INSCRIPTIONS/CONNEXION*/
 
 @font-face{
-  font-family: "luniver";
-  src: url('../font/Josephin.ttf');
+    font-family: "luniver";
+    src: url('../font/Josephin.ttf');
 }
 
 h1{
-  font-family: "luniver";
+    font-family: "luniver";
 }
 
 body, html {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  min-height: 100vh;
+    background-color: #fff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
 }
 
 a{
-  text-decoration: none;
-  color: #000;
+    text-decoration: none;
+    color: #000;
 }
 
 /******************\
@@ -25,167 +26,167 @@ a{
 \******************/
 
 nav {
-  width: 110px;
-  height: 100%;
-  position: relative;
-  z-index: 9999;
+    width: 110px;
+    height: 100%;
+    position: relative;
+    z-index: 9999;
 }
 
 nav .toggle {
-  width: 40px;
-  height: 40px;
-  /*border: 3px solid #000;*/
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  transform: rotateZ(45deg) translateX(0px);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  cursor: pointer;
-  z-index: 9999;
+    width: 40px;
+    height: 40px;
+    /*border: 3px solid #000;*/
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    transform: rotateZ(45deg) translateX(0px);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 9999;
 }
 
 nav .toggle .burger {
-  position: relative;
-  width: 20px;
-  top: 13px;
-  left: 10px;
-  -webkit-transform: rotateZ(135deg) translateX(0px);
-  transform: rotateZ(135deg) translateX(0px);
+    position: relative;
+    width: 20px;
+    top: 13px;
+    left: 10px;
+    -webkit-transform: rotateZ(135deg) translateX(0px);
+    transform: rotateZ(135deg) translateX(0px);
 }
 
 nav .toggle span {
-  width: 20px;
-  height: 2px;
-  background: #000;
-  margin-bottom: 4px;
-  display: block;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+    width: 20px;
+    height: 2px;
+    background: #000;
+    margin-bottom: 4px;
+    display: block;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
 
 nav .toggle-active {
-  position: fixed;
-  -webkit-transform: rotateZ(225deg) translateX(0px);
-  transform: rotateZ(225deg) translateX(0px);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+    position: fixed;
+    -webkit-transform: rotateZ(225deg) translateX(0px);
+    transform: rotateZ(225deg) translateX(0px);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
 
 nav .toggle-active span:first-child {
-  opacity: 1;
-  top: 6px;
-  position: relative;
-  visibility: visible;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+    opacity: 1;
+    top: 6px;
+    position: relative;
+    visibility: visible;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 nav .toggle-active span {
-  opacity: 0;
-  visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
 }
 
 nav .toggle-active span:last-of-type {
-  opacity: 1;
-  position: relative;
-  top: -6px;
-  visibility: visible;
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-  transform: rotate(135deg);
+    opacity: 1;
+    position: relative;
+    top: -6px;
+    visibility: visible;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
 }
 
 .nav-wrapper {
-  width: 80%;
-  height: 100%;
-  background: #ECECEC;
-  display: block;
-  position: fixed;
-  left: -100%;
-  background: white;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+    width: 80%;
+    height: 100%;
+    background: #ECECEC;
+    display: block;
+    position: fixed;
+    left: -100%;
+    background: white;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .nav-wrapper ul {
-  position: absolute;
-  width: 100%;
-  top: 100px;
-  left: -100px;
-  padding: 0;
-  list-style-type: none;
-  font-size: 30px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  opacity: 0;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: -100px;
+    padding: 0;
+    list-style-type: none;
+    font-size: 30px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0;
 }
 
 .nav-wrapper ul li {
-  width: 90%;
-  height: 65px;
-  padding-left: 30px;
-  position: relative;
-  display: table;
-  font-weight: bold;
+    width: 90%;
+    height: 65px;
+    padding-left: 30px;
+    position: relative;
+    display: table;
+    font-weight: bold;
 }
 
 .nav-wrapper ul li:before {
-  content: " ";
-  width: 5px;
-  height: 100%;
-  background: rgb(99, 99, 99);
-  position: absolute;
-  left: -10px;
-  -webkit-transition: .3s;
-  transition: .3s;
+    content: " ";
+    width: 5px;
+    height: 100%;
+    background: rgb(99, 99, 99);
+    position: absolute;
+    left: -10px;
+    -webkit-transition: .3s;
+    transition: .3s;
 }
 
 .nav-wrapper ul li:hover:before {
-  left: 0;
+    left: 0;
 }
 
 .nav-wrapper ul li a {
-  vertical-align: middle;
-  display: table-cell;
-  margin: 0;
-  text-decoration: none;
-  color: #000;
+    vertical-align: middle;
+    display: table-cell;
+    margin: 0;
+    text-decoration: none;
+    color: #000;
 }
 
 .nav-wrapper ul .current:before {
-  content: " ";
-  width: 5px;
-  height: 100%;
-  background: rgb(82, 82, 82);
-  position: absolute;
-  left: 0;
+    content: " ";
+    width: 5px;
+    height: 100%;
+    background: rgb(82, 82, 82);
+    position: absolute;
+    left: 0;
 }
 
 .nav-wrapper .active {
-  left: 0;
-  opacity: 1;
+    left: 0;
+    opacity: 1;
 }
 
 .nav-wrapper-active {
-  width: 80%;
-  left: 0px;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
+    width: 80%;
+    left: 0px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
 }
 
 .nav-overlay {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background: #ccc;
-  z-index: 5;
-  display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #ccc;
+    z-index: 5;
+    display: none;
 }
 
 /********************\
@@ -193,25 +194,25 @@ nav .toggle-active span:last-of-type {
 \********************/
 
 .title_tel{
-  position: absolute;
-  top: 11%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 #container_home{
-  height: auto;
-  position: relative;
-  top: 120px;
+    height: auto;
+    position: relative;
+    top: 120px;
 }
 
 #container_home p{
-  background-color: rgb(61, 61, 61);
-  height: 220px;
-  margin: 0 0 5px 0;
-  color: #fff;
-  text-align: center;
-  font-size: 80px;
+    background-color: rgb(61, 61, 61);
+    height: 220px;
+    margin: 0 0 5px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 80px;
 }
 
 /*******************\
@@ -219,19 +220,19 @@ nav .toggle-active span:last-of-type {
 \*******************/
 
 #container_shop{
-  position: relative;
-  top: 140px;
-  text-align: center;
+    position: relative;
+    top: 140px;
+    text-align: center;
 }
 
 #container_shop p{
-  display: inline-block;
-  margin: 0 20px 30px 20px;
+    display: inline-block;
+    margin: 0 20px 30px 20px;
 }
 
 #container_shop img{
-  height: 113px;
-  width: auto;
+    height: 113px;
+    width: auto;
 }
 
 /*******************\
@@ -239,37 +240,37 @@ nav .toggle-active span:last-of-type {
 \*******************/
 
 #title_about_us{
-  position: absolute;
-  top: 120px;
-  height: auto;
-  width: 100%;
+    position: absolute;
+    top: 120px;
+    height: auto;
+    width: 100%;
 }
 
 #title_about_us h2{
-  text-align: center;
-  font-size: 27px;
+    text-align: center;
+    font-size: 27px;
 }
 
 #container_about_us{
-  position: relative;
-  top: 190px;
-  height: auto;
-  text-align: center;
+    position: relative;
+    top: 190px;
+    height: auto;
+    text-align: center;
 }
 
 #container_about_us img{
-  height: auto;
-  width: 100%;
+    height: auto;
+    width: 100%;
 }
 
 #picture_about_stockist{
-  /*background-color: rgb(61, 61, 61);*/
-  margin: 0 0 5px 0;
-  text-align: center;
+    /*background-color: rgb(61, 61, 61);*/
+    margin: 0 0 5px 0;
+    text-align: center;
 }
 
 #text_about_us{
-  margin: 20px 15px 0 15px;
+    margin: 20px 15px 0 15px;
 }
 
 /********************\
@@ -277,26 +278,26 @@ nav .toggle-active span:last-of-type {
 \********************/
 
 .title_stockist{
-  position: absolute;
-  top: 120px;
-  height: auto;
-  width: 100%;
+    position: absolute;
+    top: 120px;
+    height: auto;
+    width: 100%;
 }
 
 .title_stockist h3{
-  text-align: center;
+    text-align: center;
 }
 
 .content_stockist{
-  position: relative;
-  top: 180px;
-  height: auto;
-  text-align: center;
+    position: relative;
+    top: 180px;
+    height: auto;
+    text-align: center;
 }
 
 .content_stockist img{
-  height: auto;
-  width: 100%;
+    height: auto;
+    width: 100%;
 }
 
 /******************\
@@ -304,72 +305,72 @@ nav .toggle-active span:last-of-type {
 \******************/
 
 #title_contact{
-  position: absolute;
-  top: 130px;
-  height: auto;
-  width: 100%;
+    position: absolute;
+    top: 130px;
+    height: auto;
+    width: 100%;
 }
 
 #title_contact p{
-  text-align: center;
+    text-align: center;
 }
 
 /*form styles*/
 .msform {
-  position: relative;
-  top: 250px;
-  font-family: arial, verdana;
-  width: 100%;
-  text-align: center;
+    position: relative;
+    top: 250px;
+    font-family: arial, verdana;
+    width: 100%;
+    text-align: center;
 }
 
 .msform fieldset {
-	/*stacking fieldsets above each other*/
-	position: relative;
-	box-sizing: border-box;
-	width: 80%;
-  margin: 0 10% 20px 10%;
-  border: 0 none;	
+    /*stacking fieldsets above each other*/
+    position: relative;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10% 20px 10%;
+    border: 0 none;
 }
 
 #form_contact_content{
-  margin-bottom: 100px; 
+    margin-bottom: 100px;
 }
 
 /*inputs*/
 .msform input, .msform textarea {
-	padding: 15px;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	margin-bottom: 15px;
-	width: 100%;
-	box-sizing: border-box;
-	color: #2C3E50;
-	font-size: 13px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #2C3E50;
+    font-size: 13px;
 }
 
 /*buttons*/
 .msform .action-button {
-	width: 100px;
-	background: rgb(9, 81, 238);
-	font-weight: bold;
-	color: white;
-	border: 0 none;
-	border-radius: 1px;
-	cursor: pointer;
-	padding: 10px 5px;
-	margin: 15px 5px;
+    width: 100px;
+    background: rgb(9, 81, 238);
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 15px 5px;
 }
 .msform .action-button:hover, .msform .action-button:focus {
-	box-shadow: 0 0 0 2px white, 0 0 0 3px #0951ee;
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #0951ee;
 }
 
 /*headings*/
 .fs-title {
-	font-size: 15px;
-	text-transform: uppercase;
-	color: #2C3E50;
-	margin-bottom: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 30px;
 }
 
 /**********************\
@@ -377,77 +378,77 @@ nav .toggle-active span:last-of-type {
 \**********************/
 
 .form_inscription{
-  top: 130px;
+    top: 130px;
 }
 
 #civilite_inscription{
-  margin: 25px 0 0 0;  
+    margin: 25px 0 0 0;
 }
 
 .checkbox_inscription{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  padding: 0 0 15px 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 0 0 15px 0;
 }
 
 .checkbox_inscription p{
-  margin: 0 0 10px 15px;
-  padding: 0;
+    margin: 0 0 10px 15px;
+    padding: 0;
 }
 
 .checkbox_inscription input{
-  height: 9px;
-  width: 9px;
+    height: 9px;
+    width: 9px;
 }
 
 #submit_inscription{
-  margin: 15px 0 0 0;
+    margin: 15px 0 0 0;
 }
 
 #submit_inscription p{
-  padding: 15px 0 0 0;
+    padding: 15px 0 0 0;
 }
 
 #password_inscri{
-  position: relative;
-  display: flex;
+    position: relative;
+    display: flex;
 }
 
 .password + .unmask {
-  position:absolute;
-  top: 12px;
-  right: 12px;
-  text-indent: -9999px;
-  width: 25px;
-  height: 25px;
-  background: #aaa;
-  border-radius: 50%;
-  cursor:pointer;
-  border: none;
-  -webkit-appearance:none;
+    position:absolute;
+    top: 12px;
+    right: 12px;
+    text-indent: -9999px;
+    width: 25px;
+    height: 25px;
+    background: #aaa;
+    border-radius: 50%;
+    cursor:pointer;
+    border: none;
+    -webkit-appearance:none;
 }
 
 .password + .unmask:before {
-  content: "";
-  position:absolute;
-  top:4px; left:4px;
-  width: 17px;
-  height: 17px;
-  background: #e3e3e3;
-  z-index:1;
-  border-radius: 50%;
+    content: "";
+    position:absolute;
+    top:4px; left:4px;
+    width: 17px;
+    height: 17px;
+    background: #e3e3e3;
+    z-index:1;
+    border-radius: 50%;
 }
 
 .password[type="text"] + .unmask:after {
-  content: "";
-  position:absolute;
-  top:6px; left:6px;
-  width: 13px;
-  height: 13px;
-  background: #aaa;
-  z-index:2;
-  border-radius: 50%;
+    content: "";
+    position:absolute;
+    top:6px; left:6px;
+    width: 13px;
+    height: 13px;
+    background: #aaa;
+    z-index:2;
+    border-radius: 50%;
 }
 
 /*****************\
@@ -455,10 +456,10 @@ nav .toggle-active span:last-of-type {
 \*****************/
 
 #container_profil{
-  position: relative;
-  top: 150px;
-  height: auto;
-  text-align: center;
+    position: relative;
+    top: 150px;
+    height: auto;
+    text-align: center;
 }
 
 /****************\
@@ -466,41 +467,41 @@ nav .toggle-active span:last-of-type {
 \****************/
 
 footer{
-  position: relative;
-  bottom: -200px;
-  height: auto;
-  width: 100%;
-  margin-bottom: 20px;
+    position: relative;
+    bottom: -200px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .social_media{
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  width:100%;
-  height: auto;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width:100%;
+    height: auto;
+    justify-content: center;
 }
 
 .social_icones{
-  height: 50px;
-  width: 50px;
-  margin: 10px;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
 }
 
 .conditions_ventes{
-  position: relative;
+    position: relative;
 }
 
 .conditions_ventes p{
-  width: 100%;
-  font-size: 15px;
-  text-align: center;
-  padding-bottom: 30px;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 .copyright{
-  text-align: center;
-  padding-bottom: 5px;
-  color: rgb(109, 109, 109);
+    text-align: center;
+    padding-bottom: 5px;
+    color: rgb(109, 109, 109);
 }
