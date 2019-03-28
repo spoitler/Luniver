@@ -54,6 +54,21 @@ function getAllClient(PDO $bdd, $email) {
 
 }
 
+function getAllClientById(PDO $bdd, $idClient) {
+    // La requete de base
+    $query = "SELECT nom_client, prenom_client, date_naissance, email, sexe, adresse, telephone, ville, code_postal FROM client WHERE idClient=:idclient";
+    // On récupère tout le contenu de la table
+
+    $resultat = $bdd->prepare($query);
+
+    $resultat->bindParam(":idclient", $idClient);
+
+    $resultat->execute();
+
+    return $resultat->fetch(PDO::FETCH_OBJ);
+
+}
+
 function getClients(PDO $bdd) {
     // La requete de base
     $query = "SELECT idClient,nom_client, prenom_client, date_naissance, email, sexe, adresse, telephone, ville, code_postal FROM client";
