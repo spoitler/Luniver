@@ -462,6 +462,15 @@ nav .toggle-active span:last-of-type {
     text-align: center;
 }
 
+/***********************\
+    PAGE LISTECLIENT
+\***********************/
+
+#ajoutClient{
+    position: relative;
+    left: 46%;
+}
+
 /****************\
       FOOTER
 \****************/
@@ -505,3 +514,4 @@ footer{
     padding-bottom: 5px;
     color: rgb(109, 109, 109);
 }
+

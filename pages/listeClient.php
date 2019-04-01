@@ -77,7 +77,7 @@ if ($bdd) {
             }?>
             <tr height="50px">
                 <td colspan="10">
-                   <a id="ajoutClient" class="btn btn-success btn-sm" href="ajouterClient.php?id=<?=$id?>"><i class="fas fa-plus" aria-hidden="true"></i>&nbsp;Ajouter</a>
+                   <a id="ajoutClient" class="btn btn-success btn-sm" href="ajoutClient.php?id=<?=$id?>"><i class="fas fa-plus" aria-hidden="true"></i>&nbsp;Ajouter</a>
                 </td>
             </tr><?php
         }
