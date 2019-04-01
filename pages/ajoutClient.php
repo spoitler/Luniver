@@ -1,3 +1,11 @@
+<?php
+
+session_start();
+
+$_SESSION['type'] = "admin";
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,21 +26,26 @@
 <br />
 <br />
 
-<form action="updateClient.php" method="post">
+<form action="newclient.php" method="post">
     <div class="form-group">
-        <label for="nom">Nom</label>
         <input type="text" class="form-control" name="nom" placeholder="Entrez le nom" />
         <input type="text" class="form-control" name="prenom" placeholder="Entrez le prenom" />
-        <input type="date" class="form-control" name="naissance" placeholder="Entrez la date de naisssance" />
+        <input type="date" class="form-control" name="date_naissance" placeholder="Entrez la date de naisssance" />
         <input type="email" class="form-control" name="email" placeholder="Entrez l'email" />
-        <input type="text" class="form-control" name="sexe" placeholder="Entrez le sexe" />
         <input type="text" class="form-control" name="adresse" placeholder="Entrez l'adresse" />
         <input type="text" class="form-control" name="telephone" placeholder="Entrez le numero de telephone" />
         <input type="text" class="form-control" name="ville" placeholder="Entrez le ville" />
         <input type="text" class="form-control" name="postalc" placeholder="Entrez le code postal" />
+        <p>Sexe :</p>
+        <div id="civilite_inscription">
+            <div class="checkbox_inscription">
+                <input name="sexe" type="radio" value="Homme"><p>Homme</p>
+            </div>
+            <div class="checkbox_inscription">
+                <input name="sexe" type="radio" value="Femme"><p>Femme</p>
+            </div>
+        </div>
     </div>
-
-    <input type="hidden" name="id" value="<?= $id ?>" />
 
     <input type="submit" value="Valider" class="btn btn-primary" />
 

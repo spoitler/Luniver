@@ -14,8 +14,8 @@
     <form action="newclient.php" method="post" class="msform form_inscription">
         <fieldset>
             <h2 class="fs-title">Création de votre comtpe</h2>
-            <input type="text" name="lname" placeholder="Nom" required/>
-            <input type="text" name="fname" placeholder="Prénom" required/>
+            <input type="text" name="nom" placeholder="Nom" required/>
+            <input type="text" name="prenom" placeholder="Prénom" required/>
             <input type="date" name="date_naissance" placeholder="date de naissance" required/>
             <input type="email" name="email" placeholder="Email" required/>
             <div id="password_inscri">
@@ -26,7 +26,7 @@
                 <input type="password" value="" placeholder="Confirmation mot de passe" id="confirm_password" class="password" required>
                 <button class="unmask" type="button" title="Mask/Unmask password to check content">Unmask</button>
             </div>
-            <input type="text" name="phone" placeholder="Téléphone" required/>
+            <input type="text" name="telephone" placeholder="Téléphone" required/>
             <input type="text" name="adresse" placeholder="Adresse" required/>
             <input type="text" name="ville" placeholder="Ville" required/>
             <input type="text" name="postalc" placeholder="Code postal" required/>

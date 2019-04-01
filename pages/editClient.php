@@ -48,7 +48,6 @@ else {
 
 <form action="updateClient.php" method="post">
     <div class="form-group">
-        <label for="nom">Nom</label>
         <input type="text" class="form-control" name="nom" placeholder="Entrez le nom" value="<?= $luniver->nom_client ?>" />
         <input type="text" class="form-control" name="prenom" placeholder="Entrez le prenom" value="<?= $luniver->prenom_client ?>" />
         <input type="date" class="form-control" name="naissance" placeholder="Entrez la date de naisssance" value="<?= $luniver->date_naissance ?>" />

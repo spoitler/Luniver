@@ -1,3 +1,8 @@
+<?php
+    session_start();
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,21 +16,37 @@
 
 <?php
 
-$nom = postVar("lname");
-$prenom = postVar("fname");
+echo "test";
+
+$nom = postVar("nom");
+$prenom = postVar("prenom");
 $date_naissance = postVar("date_naissance");
 $email = postVar("email");
 $password = postVar("password");
-$telephone = postVar("phone");
+$telephone = postVar("telephone");
 $adresse = postVar("adresse");
 $ville = postVar("ville");
 $postalc = postVar("postalc");
 $sexe = postVar("sexe");
 
+if (empty($password)){
+    $password = "0000";
+}
+
+echo "<br>".$nom;
+echo "<br>".$prenom;
+echo "<br>".$date_naissance;
+echo "<br>".$email;
+echo "<br>".$telephone;
+echo "<br>".$adresse;
+echo "<br>".$ville;
+echo "<br>".$postalc;
+echo "<br>".$sexe;
+echo "<br>".$password;
+
 if ($nom && $prenom && $date_naissance && $email && $password && $telephone && $adresse && $ville && $postalc && $sexe)
 {
     $bdd = getbdd();
-
     echo "connecté";
 
     $password = password_hash($password, PASSWORD_DEFAULT);
@@ -46,8 +67,13 @@ if ($nom && $prenom && $date_naissance && $email && $password && $telephone && $
     $result->bindParam(":sexe", $sexe);
 
     $result->execute();
-
-    header('Location: index.php');
+    
+    if ($_SESSION['type'] == "admin"){
+        echo
+        header('Location: listeClient.php');
+    }else{
+        header('Location: index.php');
+    }
 
 
 }
