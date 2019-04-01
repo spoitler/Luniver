@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>LUNIVER</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
 
 </head>
 <body>
@@ -48,7 +48,7 @@
         </div>
     </form>
     <?php include("footer.php"); ?>
-    <script  src="/js/password.js"></script>
-    <script src="/js/confirm_password"></script>
+    <script  src="../js/password.js"></script>
+    <script src="../js/confirm_password"></script>
 </body>
 </html>

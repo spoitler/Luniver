@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>LUNIVER</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
     </head>
     <body>
         <?php include("menu.php"); ?>
@@ -14,7 +14,7 @@
         </div>
         <div id="container_about_us">
             <p id="picture_about_stockist">
-                <img src="/img/athlete_foot.jpg" alt="">
+                <img src="../img/athlete_foot.jpg" alt="">
             </p>
             <p id="text_about_us">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo diam libero, id lacinia dui euismod eget. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean congue justo quis ante rutrum suscipit. Nam nec vestibulum lacus. Integer vel aliquet elit. Suspendisse gravida condimentum dolor, non scelerisque neque gravida a. Proin ullamcorper aliquet consectetur.</p>
         </div>
