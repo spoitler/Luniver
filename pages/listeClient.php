@@ -7,6 +7,7 @@ session_start();
 <html>
 <head>
     <title>Affichage des livres</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
     <?php
     include_once ("../header/header.inc.html");
     include_once ("function.php");
@@ -32,21 +33,24 @@ if ($bdd) {
     <table class="table table-striped table-hover table-bordered" width="75%">
         <thead>
         <tr>
-            <th width="120">Nom</th>
-            <th width="120">Prénom</th>
-            <th width="160">Date de naissance</th>
-            <th width="230">Email</th>
-            <th width="90">Sexe</th>
-            <th width="210">Adresse</th>
-            <th width="110">Telephone</th>
-            <th width="110">Ville</th>
-            <th width="110">Code postal</th>
+            <th >Nom</th>
+            <th >Prénom</th>
+            <th >Date de naissance</th>
+            <th >Email</th>
+            <th >Sexe</th>
+            <th >Adresse</th>
+            <th >Telephone</th>
+            <th >Ville</th>
+            <th >Code postal</th>
+            <th></th>
+
         </tr>
         </thead>
         <tbody>
         <?php
         // objet "$publishers" valide ?
         if ($clients) {
+            $id = 0;
             foreach ($clients as $client) {
                 // On affiche chaque entrée une à une
                 ?>
@@ -66,9 +70,16 @@ if ($bdd) {
                             <a class="btn btn-danger btn-sm" href="delClient.php?id=<?=$client->idClient?>">
                                 <i class="fa fa-trash-alt" aria-hidden="true"></i>&nbsp;Supprimer</a>
                         </td>
-                </tr>
-                <?php
-            }
+                </tr><?php
+                if ($id == 0){
+                    $id = $client->idClient;
+                }
+            }?>
+            <tr height="50px">
+                <td colspan="10">
+                   <a id="ajoutClient" class="btn btn-success btn-sm" href="ajouterClient.php?id=<?=$id?>"><i class="fas fa-plus" aria-hidden="true"></i>&nbsp;Ajouter</a>
+                </td>
+            </tr><?php
         }
         else {
             echo "<tr><td colspan='3'>Aucun résultat</td></tr>";
