@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Liste des éditeur</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
+
     <?php
 
     include_once ("function.php");
@@ -70,7 +72,14 @@ if ($bdd) {
                 </tr>
 
                 <?php
-            }
+            }?>
+            <tr >
+                <td colspan="10">
+                    <a id="ajoutClient" class="btn btn-success btn-sm" href="ajoutProduit.php"><i class="fas fa-plus" aria-hidden="true"></i>&nbsp;Ajouter</a>
+                </td>
+            </tr>
+
+        <?php
         }
         else {
             echo "<tr><td colspan='3'>Aucun résultat</td></tr>";
