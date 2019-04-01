@@ -2,17 +2,17 @@
     <div class="social_media">
         <p>
             <a href="">
-                <img class="social_icones" src="img/fb_icone.png" alt="">
+                <img class="social_icones" src="/img/fb_icone.png" alt="">
             </a>
         </p>
         <p>
             <a href="">
-                <img class="social_icones" src="img/twitter_icone.png" alt="">
+                <img class="social_icones" src="/img/twitter_icone.png" alt="">
             </a>
         </p>
         <p>
             <a href="">
-                <img class="social_icones" src="img/instagram_icone.png" alt="">
+                <img class="social_icones" src="/img/instagram_icone.png" alt="">
             </a>
         </p>
     </div>

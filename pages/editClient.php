@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<h2>Edition d'un éditeur</h2>
+<h2>Edition d'un Client</h2>
 
 <?php
 // On regarde comment a été appellé la page
@@ -25,9 +25,9 @@ if (!empty($idClient)) {
         // Id correct
     $luniver = getAllClientById($bdd, $idClient);
     if ($luniver == null){
-        $idClient = -1;
+        $id = -1;
     }else{
-        $idClient=1;
+        $id=1;
     }
 }
 
@@ -38,7 +38,7 @@ if (!empty($idClient)) {
 <br />
 
 <?php
-if ($idClient == -1) {
+if ($id == -1) {
     ?>
     <p>L'éditeur n'existe pas</p>
     <?php
@@ -46,7 +46,7 @@ if ($idClient == -1) {
 else {
     ?>
 
-<form action="updateClient.php" method="POST">
+<form action="updateClient.php" method="post">
     <div class="form-group">
         <label for="nom">Nom</label>
         <input type="text" class="form-control" name="nom" placeholder="Entrez le nom" value="<?= $luniver->nom_client ?>" />
@@ -55,7 +55,7 @@ else {
         <input type="email" class="form-control" name="email" placeholder="Entrez l'email" value="<?= $luniver->email ?>" />
         <input type="text" class="form-control" name="sexe" placeholder="Entrez le sexe" value="<?= $luniver->sexe ?>" />
         <input type="text" class="form-control" name="adresse" placeholder="Entrez l'adresse" value="<?= $luniver->adresse ?>" />
-        <input type="text" class="form-control" name="telehpone" placeholder="Entrez le numero de telephone" value="<?= $luniver->telephone ?>" />
+        <input type="text" class="form-control" name="telephone" placeholder="Entrez le numero de telephone" value="<?= $luniver->telephone ?>" />
         <input type="text" class="form-control" name="ville" placeholder="Entrez le ville" value="<?= $luniver->ville ?>" />
         <input type="text" class="form-control" name="postalc" placeholder="Entrez le code postal" value="<?= $luniver->code_postal ?>" />
     </div>

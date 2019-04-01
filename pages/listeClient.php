@@ -63,7 +63,7 @@ if ($bdd) {
                         <td>
                             <a class="btn btn-primary btn-sm" href="editClient.php?id=<?=$client->idClient?>">
                                 <i class="fa fa-pencil-alt" aria-hidden="true"></i>&nbsp;Modifier</a>
-                            <a class="btn btn-danger btn-sm" href="delPub.php?id=<?=$client->idClient?>">
+                            <a class="btn btn-danger btn-sm" href="delClient.php?id=<?=$client->idClient?>">
                                 <i class="fa fa-trash-alt" aria-hidden="true"></i>&nbsp;Supprimer</a>
                         </td>
                 </tr>

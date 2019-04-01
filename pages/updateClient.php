@@ -12,24 +12,25 @@
 
 
     <?php
-    $idClient = postVar('id');
-    $nom = postVar("lname");
-    $prenom = postVar("fname");
-    $date_naissance = postVar("date_naissance");
+    $id = postVar('id');
+    $nom = postVar("nom");
+    $prenom = postVar("prenom");
+    $date_naissance = postVar("naissance");
     $email = postVar("email");
-    $telephone = postVar("phone");
+    $telephone = postVar("telephone");
     $adresse = postVar("adresse");
     $ville = postVar("ville");
     $postalc = postVar("postalc");
     $sexe = postVar("sexe");
 
-   if (!empty ($idClient)){
+   if (!empty ($id)){
 
        $bdd = getbdd();
-       $query = "UPDATE client SET nom_client=:nom, prenom_client=:prenom,date_naissance=:naissance,email=:email,sexe=:sexe,adresse=:adresse,telephone=:telephone,ville=:ville,code_postal=:postalc WHERE 1";
+       $query = "UPDATE client SET nom_client=:nom, prenom_client=:prenom,date_naissance=:naissance,email=:email,sexe=:sexe,adresse=:adresse,telephone=:telephone,ville=:ville,code_postal=:postalc WHERE idClient=:id";
 
        $resultat = $bdd->prepare($query);
 
+       $resultat->bindParam(":id", $id);
        $resultat->bindParam(":nom", $nom);
        $resultat->bindParam(":prenom", $prenom);
        $resultat->bindParam(":naissance", $date_naissance);
@@ -43,13 +44,7 @@
        $resultat->execute();
    }
 
-   header("location: listePubrecherche.php");
-
-
-
-
-
-
+   header("location: listeClient.php");
 
     ?>
     </body>
