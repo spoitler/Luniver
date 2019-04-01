@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -44,7 +48,11 @@
        $resultat->execute();
    }
 
-   header("location: listeClient.php");
+    if ($_SESSION['type'] == "admin"){
+        header('Location: listeClient.php');
+    }else{
+        header('Location: donnees_personnel.php');
+    }
 
     ?>
     </body>

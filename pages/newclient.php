@@ -67,9 +67,8 @@ if ($nom && $prenom && $date_naissance && $email && $password && $telephone && $
     $result->bindParam(":sexe", $sexe);
 
     $result->execute();
-    
+
     if ($_SESSION['type'] == "admin"){
-        echo
         header('Location: listeClient.php');
     }else{
         header('Location: index.php');
