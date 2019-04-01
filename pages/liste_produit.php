@@ -24,7 +24,7 @@ $bdd = getbdd();
 if ($bdd) {
     // connexion réussie
     // La requete de base
-    $query = "SELECT * FROM `produit` WHERE 1";
+    $query = "SELECT * FROM `produit` WHERE 1 ";
 
     $produit = $bdd->prepare($query);
 
@@ -43,7 +43,7 @@ if ($bdd) {
             <th width="250">Description</th>
             <th width="70">image</th>
             <th width="50">quantite</th>
-            <th width="80"></th>
+            <th width="180"></th>
 
         </tr>
         </thead>
