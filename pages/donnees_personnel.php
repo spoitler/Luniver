@@ -26,14 +26,14 @@ if (empty($_SESSION['email'])){
     <body>
         <?php include("menu.php"); ?>
 
-        <form action="newclient.php" method="post" class="msform form_inscription">
+        <form action="updateClient.php" method="post" class="msform form_inscription">
             <fieldset>
                 <h2 class="fs-title">Modification des informations personnel</h2>
-                <input type="text" name="lname" placeholder="Nom" value="<?= $donnees->nom_client; ?>" required/>
-                <input type="text" name="fname" placeholder="Prénom" value="<?= $donnees->prenom_client; ?>" required/>
+                <input type="text" name="nom" placeholder="Nom" value="<?= $donnees->nom_client; ?>" required/>
+                <input type="text" name="prenom" placeholder="Prénom" value="<?= $donnees->prenom_client; ?>" required/>
                 <input type="date" name="date_naissance" placeholder="date de naissance" value="<?= $donnees->date_naissance; ?>" required/>
                 <input type="email" name="email" placeholder="Email" value="<?= $donnees->email; ?>" required/>
-                <input type="text" name="phone" placeholder="Téléphone" value="<?= $donnees->telephone; ?>" required/>
+                <input type="text" name="telephone" placeholder="Téléphone" value="<?= $donnees->telephone; ?>" required/>
                 <input type="text" name="adresse" placeholder="Adresse" value="<?= $donnees->adresse; ?>" required/>
                 <input type="text" name="ville" placeholder="Ville" value="<?= $donnees->ville; ?>" required/>
                 <input type="text" name="postalc" placeholder="Code postal" value="<?= $donnees->code_postal; ?>" required/>
@@ -49,6 +49,7 @@ if (empty($_SESSION['email'])){
                     </div>
                 </div>
             </div>
+            <input type="hidden" name="id" value="<?= $donnees->idClient ?>" />
             <div id="submit_info_perso">
                 <button type="submit" name="submit" class="submit action-button" value="Submit">Mettre à jour</button>
             </div>

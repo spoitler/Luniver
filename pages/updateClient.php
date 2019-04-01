@@ -16,10 +16,10 @@ session_start();
 
 
     <?php
-    $id = postVar('id');
+    $id = postVar("id");
     $nom = postVar("nom");
     $prenom = postVar("prenom");
-    $date_naissance = postVar("naissance");
+    $date_naissance = postVar("date_naissance");
     $email = postVar("email");
     $telephone = postVar("telephone");
     $adresse = postVar("adresse");
@@ -27,7 +27,7 @@ session_start();
     $postalc = postVar("postalc");
     $sexe = postVar("sexe");
 
-   if (!empty ($id)){
+    if ($nom && $prenom && $date_naissance && $email && $telephone && $adresse && $ville && $postalc && $sexe){
 
        $bdd = getbdd();
        $query = "UPDATE client SET nom_client=:nom, prenom_client=:prenom,date_naissance=:naissance,email=:email,sexe=:sexe,adresse=:adresse,telephone=:telephone,ville=:ville,code_postal=:postalc WHERE idClient=:id";
@@ -46,12 +46,14 @@ session_start();
        $resultat->bindParam(":postalc",$postalc);
 
        $resultat->execute();
-   }
+    }else{
+       echo "erreur !";
+    }
 
     if ($_SESSION['type'] == "admin"){
         header('Location: listeClient.php');
     }else{
-        header('Location: donnees_personnel.php');
+        header('Location: recupdonneeperso.php');
     }
 
     ?>

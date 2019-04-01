@@ -41,7 +41,7 @@ function postVar($name) {
 
 function getAllClient(PDO $bdd, $email) {
     // La requete de base
-    $query = "SELECT nom_client, prenom_client, date_naissance, email, sexe, adresse, telephone, ville, code_postal FROM client WHERE email=:email";
+    $query = "SELECT idClient,nom_client, prenom_client, date_naissance, email, sexe, adresse, telephone, ville, code_postal FROM client WHERE email=:email";
     // On récupère tout le contenu de la table
 
     $resultat = $bdd->prepare($query);

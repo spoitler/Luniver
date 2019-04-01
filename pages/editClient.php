@@ -59,7 +59,7 @@ else {
         <input type="text" class="form-control" name="postalc" placeholder="Entrez le code postal" value="<?= $luniver->code_postal ?>" />
     </div>
 
-    <input type="hidden" name="id" value="<?php echo $idClient ?>" />
+    <input type="hidden" name="id" value="<?= $idClient ?>" />
 
     <input type="submit" value="Valider" class="btn btn-primary" />
 

@@ -33,23 +33,12 @@ if (empty($password)){
     $password = "0000";
 }
 
-echo "<br>".$nom;
-echo "<br>".$prenom;
-echo "<br>".$date_naissance;
-echo "<br>".$email;
-echo "<br>".$telephone;
-echo "<br>".$adresse;
-echo "<br>".$ville;
-echo "<br>".$postalc;
-echo "<br>".$sexe;
-echo "<br>".$password;
-
 if ($nom && $prenom && $date_naissance && $email && $password && $telephone && $adresse && $ville && $postalc && $sexe)
 {
     $bdd = getbdd();
     echo "connecté";
 
-    $password = password_hash($password, PASSWORD_DEFAULT);
+    $password = hash("sha3-512",$password);
 
     $query = "INSERT INTO client( nom_client, prenom_client, date_naissance, email, sexe, adresse, telephone, ville, code_postal, password) VALUES (:nom,:prenom,:date_naissance, :email, :sexe,:adresse,:telephone,:ville,:postalc,:password)";
 
