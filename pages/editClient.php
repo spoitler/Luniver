@@ -50,7 +50,7 @@ else {
     <div class="form-group">
         <input type="text" class="form-control" name="nom" placeholder="Entrez le nom" value="<?= $luniver->nom_client ?>" />
         <input type="text" class="form-control" name="prenom" placeholder="Entrez le prenom" value="<?= $luniver->prenom_client ?>" />
-        <input type="date" class="form-control" name="naissance" placeholder="Entrez la date de naisssance" value="<?= $luniver->date_naissance ?>" />
+        <input type="date" class="form-control" name="date_naissance" placeholder="Entrez la date de naisssance" value="<?= $luniver->date_naissance ?>" />
         <input type="email" class="form-control" name="email" placeholder="Entrez l'email" value="<?= $luniver->email ?>" />
         <input type="text" class="form-control" name="sexe" placeholder="Entrez le sexe" value="<?= $luniver->sexe ?>" />
         <input type="text" class="form-control" name="adresse" placeholder="Entrez l'adresse" value="<?= $luniver->adresse ?>" />
