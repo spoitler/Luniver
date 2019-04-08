@@ -40,7 +40,7 @@ use PHPMailer\PHPMailer\Exception;
 
 $mail = new PHPMailer(true);
 $mail->IsSMTP();
-$mail->SMTPDebug = 2;
+$mail->SMTPDebug = 0;
 $mail->CharSet = 'UTF-8';
 $mail->Host = "SMTP-mail.Outlook.com";
 $mail->SMTPAuth= true;
@@ -65,7 +65,7 @@ $mail->Body = $message;
 $mail->addAddress('romain.bonnes@outlook.com');
 
 if(!$mail->send()){
-    echo "Mailer Error: " . $mail->ErrorInfo;
+   // echo "Mailer Error: " . $mail->ErrorInfo;
 }else{
     echo "E-Mail has been sent";
 }
