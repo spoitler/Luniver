@@ -1,16 +1,13 @@
-<?php
-
-session_start();
-
-?>
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html>
     <head>
         <meta charset="utf-8">
         <title>LUNIVER</title>
     </head>
     <body>
-    <?php include("function.php"); ?>
+    <?php include("function.php");
+    include_once ("menu.php");
+    ?>
 
     </body>
     </html>

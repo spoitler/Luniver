@@ -1,16 +1,9 @@
-<?php
-
-session_start();
-
-$_SESSION['type'] = "admin";
-
-?>
-
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <title>Edition d'un éditeur</title>
     <?php
+    include ("menu.php");
     include_once ("../header/header.inc.html");
     include_once ("function.php");
     ?>

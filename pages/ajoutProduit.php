@@ -3,6 +3,7 @@
 <head>
     <title>Création d'un produit</title>
     <?php
+    include_once ("menu.php");
     include_once ("../header/header.inc.html");
     include_once ("function.php");
     ?>

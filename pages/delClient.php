@@ -3,8 +3,8 @@
 <head>
     <title>Edition d'un éditeur</title>
     <?php
-    include_once ("../header/header.inc.html");
-    include_once ("function.php");
+    include_once ("menu.php");
+        include_once ("function.php");
     ?>
 </head>
 <body>

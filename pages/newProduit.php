@@ -1,5 +1,7 @@
 
-<?php include("function.php"); ?>
+<?php include("function.php");
+include_once ("menu.php");
+?>
 
 <?php
 

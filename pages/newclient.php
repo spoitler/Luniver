@@ -1,8 +1,3 @@
-<?php
-    session_start();
-
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,13 +5,13 @@
     <title>LUNIVER</title>
 </head>
 <body>
-    <?php include("function.php"); ?>
+    <?php include("function.php");
+    include_once ("menu.php");
+    ?>
 </body>
 </html>
 
 <?php
-
-echo "test";
 
 $nom = postVar("nom");
 $prenom = postVar("prenom");

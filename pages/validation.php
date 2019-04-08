@@ -8,7 +8,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
 </head>
 <body>
-    <?php include("function.php"); ?>
+    <?php include("function.php");
+    include_once ("menu.php");
+    ?>
 
 
 

@@ -13,7 +13,7 @@
             <p>une question ? un problème ? <br>contactez - nous.</p>
         </div>
         <div id="form_contact">
-            <form class="msform">
+            <form class="msform" action="contact.php" method="post">
                 <fieldset id="form_contact_content">
                     <input type="text" name="email" placeholder="Email"/>
                     <textarea type="text" name="message" placeholder="Message" cols="30" rows="5"></textarea>
@@ -24,3 +24,53 @@
         <?php include("footer.php"); ?>
     </body>
 </html>
+<?php
+
+include_once ('function.php');
+
+$email = postVar('email');
+$message = postVar('message');
+
+
+// L'envoi de mail
+require ("../vendor/autoload.php");
+// La classe PHPMailer que nous allons utiliser
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+$mail = new PHPMailer(true);
+$mail->IsSMTP();
+$mail->SMTPDebug = 2;
+$mail->CharSet = 'UTF-8';
+$mail->Host = "SMTP-mail.Outlook.com";
+$mail->SMTPAuth= true;
+$mail->Port = 587;
+$mail->Username= 'romain.bonnes@outlook.com';
+$mail->Password= 'Rom.Bon_684157';
+$mail->SMTPSecure = 'tls';
+$mail->From = 'romain.bonnes@outlook.com';
+$mail->FromName= 'LUNIVER';
+$mail->isHTML(true);
+$mail->Subject = 'Contact';
+$mail->Body = 'nous avons bien recu votre message';
+$mail->addAddress($email);
+$mail->send();
+$mail->clearAddresses();
+
+$mail->From = 'romain.bonnes@outlook.com';
+$mail->FromName= 'LUNIVER';
+$mail->isHTML(true);
+$mail->Subject = 'Contact';
+$mail->Body = $message;
+$mail->addAddress('romain.bonnes@outlook.com');
+
+if(!$mail->send()){
+    echo "Mailer Error: " . $mail->ErrorInfo;
+}else{
+    echo "E-Mail has been sent";
+}
+
+
+
+
+

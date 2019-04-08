@@ -1,13 +1,7 @@
-
-    <?php
-    include_once ("../header/header.inc.html");
-    include_once ("function.php");
-    ?>
-
-
-
-
 <?php
+include_once ("menu.php");
+include_once ("function.php");
+
 $id = getVar('id');
 
 echo $id;
@@ -26,4 +20,4 @@ if (!empty ($id)){
 
 header("location: liste_produit.php");
 
-?>
+

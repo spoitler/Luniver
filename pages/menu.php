@@ -1,3 +1,8 @@
+<?php
+
+session_start();
+
+?>
 <div class="menu">
     <nav>
         <div class="toggle">
