@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Affichage des livres</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <?php
     include_once ("menu.php");
     include_once ("header/header.inc.html");
