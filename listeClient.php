@@ -7,6 +7,12 @@
     include_once ("menu.php");
     include_once ("header/header.inc.html");
     include_once ("function.php");
+
+    echo $_SESSION['type'];
+    if ($_SESSION['type'] != "admin"){
+        echo "test";
+        header('Location: index.php');
+    }
     ?>
 </head>
 
