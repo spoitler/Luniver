@@ -24,9 +24,13 @@ $ville = postVar("ville");
 $postalc = postVar("postalc");
 $sexe = postVar("sexe");
 
+echo $password;
+
 if (empty($password)){
     $password = "0000";
 }
+
+echo $password;
 
 if ($nom && $prenom && $date_naissance && $email && $password && $telephone && $adresse && $ville && $postalc && $sexe)
 {
@@ -55,7 +59,7 @@ if ($nom && $prenom && $date_naissance && $email && $password && $telephone && $
     if ($_SESSION['type'] == "admin"){
         header('Location: listeClient.php');
     }else{
-        header('Location: index.php');
+      //  header('Location: index.php');
     }
 
 
