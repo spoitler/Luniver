@@ -26,18 +26,14 @@ $sexe = postVar("sexe");
 
 echo $password;
 
-if (empty($password)){
-    $password = "0000";
-}
-
-echo $password;
 
 if ($nom && $prenom && $date_naissance && $email && $password && $telephone && $adresse && $ville && $postalc && $sexe)
 {
     $bdd = getbdd();
     echo "connecté";
 
-    $password = hash("sha3-512",$password);
+    $passwordcrypt = hash("sha3-512",$password);
+    echo $passwordcrypt;
 
     $query = "INSERT INTO client( nom_client, prenom_client, date_naissance, email, sexe, adresse, telephone, ville, code_postal, password) VALUES (:nom,:prenom,:date_naissance, :email, :sexe,:adresse,:telephone,:ville,:postalc,:password)";
 
@@ -47,7 +43,7 @@ if ($nom && $prenom && $date_naissance && $email && $password && $telephone && $
     $result->bindParam(":prenom", $prenom);
     $result->bindParam(":date_naissance", $date_naissance);
     $result->bindParam(":email", $email);
-    $result->bindParam(":password", $password);
+    $result->bindParam(":password", $passwordcrypt);
     $result->bindParam(":telephone", $telephone);
     $result->bindParam(":adresse", $adresse);
     $result->bindParam(":ville", $ville);
