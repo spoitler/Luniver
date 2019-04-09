@@ -1,5 +1,4 @@
 <?php
-include_once ("menu.php");
 include("function.php");
 
 if (empty($_SESSION['email'])){

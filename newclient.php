@@ -24,8 +24,6 @@ $ville = postVar("ville");
 $postalc = postVar("postalc");
 $sexe = postVar("sexe");
 
-echo $password;
-
 
 if ($nom && $prenom && $date_naissance && $email && $password && $telephone && $adresse && $ville && $postalc && $sexe)
 {
@@ -33,7 +31,6 @@ if ($nom && $prenom && $date_naissance && $email && $password && $telephone && $
     echo "connecté";
 
     $password = hash("sha512",$password);
-    echo $password;
 
     $query = "INSERT INTO client( nom_client, prenom_client, date_naissance, email, sexe, adresse, telephone, ville, code_postal, password) VALUES (:nom,:prenom,:date_naissance, :email, :sexe,:adresse,:telephone,:ville,:postalc,:password)";
 
@@ -55,7 +52,7 @@ if ($nom && $prenom && $date_naissance && $email && $password && $telephone && $
     if ($_SESSION['type'] == "admin"){
         header('Location: listeClient.php');
     }else{
-      //  header('Location: index.php');
+        header('Location: index.php');
     }
 
 
