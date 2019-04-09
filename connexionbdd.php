@@ -31,7 +31,7 @@ if ($email && $password){
     $verification->execute();
     $resultat = $verification->fetch();
 
-    $passwordCorrect = hash("sha3-512",$password);
+    $passwordCorrect = hash("sha512",$password);
 
     if ($passwordCorrect) {
         echo "connecté";
