@@ -2,6 +2,10 @@
 include_once ("menu.php");
 include_once ("function.php");
 
+if ($_SESSION['type'] != "admin"){
+   header('Location: index.php');
+}
+
 $id = getVar('id');
 
 echo $id;

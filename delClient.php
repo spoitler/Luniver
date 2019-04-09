@@ -4,7 +4,10 @@
     <title>Edition d'un éditeur</title>
     <?php
     include_once ("menu.php");
-        include_once ("function.php");
+    include_once ("function.php");
+    if ($_SESSION['type'] != "admin"){
+        header('Location: index.php');
+    }
     ?>
 </head>
 <body>

@@ -24,6 +24,10 @@ $ville = postVar("ville");
 $postalc = postVar("postalc");
 $sexe = postVar("sexe");
 
+if (empty($password)){
+    $password = "0000";
+}
+
 
 if ($nom && $prenom && $date_naissance && $email && $password && $telephone && $adresse && $ville && $postalc && $sexe)
 {
