@@ -9,10 +9,9 @@
     include_once ("function.php");
 
     echo $_SESSION['type'];
-    if ($_SESSION['type'] != "admin"){
-        echo "test";
-        header('Location: index.php');
-    }
+//    if ($_SESSION['type'] != "admin"){
+//       header('Location: index.php');
+//    }
     ?>
 </head>
 
