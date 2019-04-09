@@ -4,7 +4,7 @@ function getbdd(){
 	$host = "localhost";
     $dbName = "luniver";
     $login = "admin";
-    $password = "RATAL5";
+    $password = "ujhcLas3a";
 
     try
     {
