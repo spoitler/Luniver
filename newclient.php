@@ -32,8 +32,8 @@ if ($nom && $prenom && $date_naissance && $email && $password && $telephone && $
     $bdd = getbdd();
     echo "connecté";
 
-    $passwordcrypt = hash("sha3-512",$password);
-    echo $passwordcrypt;
+    $password = hash("sha512",$password);
+    echo $password;
 
     $query = "INSERT INTO client( nom_client, prenom_client, date_naissance, email, sexe, adresse, telephone, ville, code_postal, password) VALUES (:nom,:prenom,:date_naissance, :email, :sexe,:adresse,:telephone,:ville,:postalc,:password)";
 
@@ -43,7 +43,7 @@ if ($nom && $prenom && $date_naissance && $email && $password && $telephone && $
     $result->bindParam(":prenom", $prenom);
     $result->bindParam(":date_naissance", $date_naissance);
     $result->bindParam(":email", $email);
-    $result->bindParam(":password", $passwordcrypt);
+    $result->bindParam(":password", $password);
     $result->bindParam(":telephone", $telephone);
     $result->bindParam(":adresse", $adresse);
     $result->bindParam(":ville", $ville);
