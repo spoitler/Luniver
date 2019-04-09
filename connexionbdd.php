@@ -17,8 +17,6 @@
 $email = postVar("email");
 $password = postVar("password");
 
-$_SESSION['email'] = $email;
-
 if ($email && $password){
     $bdd = getbdd();
 
@@ -32,10 +30,15 @@ if ($email && $password){
     $resultat = $verification->fetch();
 
     $passwordCorrect = hash("sha512",$password);
+    $passwordbdd = $resultat['password'];
 
-    if ($passwordCorrect == $password) {
+    if ($passwordCorrect == $passwordbdd) {
         echo "connecté";
-        header('Location: recupdonneeperso.php');
+        $_SESSION['email'] = $email;
+        //header('Location: recupdonneeperso.php');
+        header('Location: index.php');
+    }else{
+        echo "t'es nul";
     }
 
 }

@@ -52,6 +52,7 @@ if ($nom && $prenom && $date_naissance && $email && $password && $telephone && $
     if ($_SESSION['type'] == "admin"){
         header('Location: listeClient.php');
     }else{
+        $_SESSION['email'] = $email;
         header('Location: index.php');
     }
 

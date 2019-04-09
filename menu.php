@@ -19,7 +19,12 @@ session_start();
                 <li><a href="a_propos.php">A PROPOS</a></li>
                 <li><a href="revendeur.php">REVENDEUR</a></li>
                 <li><a href="contact.php">CONTACT</a></li>
-                <li><a href="connexion.php">MON COMPTE</a></li>
+                <li><?php if (empty($_SESSION['email'])){
+                        echo '<a href="connexion.php">CONNEXION / INSCRIPTION</a>';
+                    }else{
+                        echo '<a href="profil.php">MON COMPTE</a>';
+                    }?>
+                </li>
             </ul>
         </div>
     </nav>

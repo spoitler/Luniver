@@ -1,10 +1,10 @@
 <?php
 include_once ("menu.php");
 include("function.php");
-/*
+
 if (empty($_SESSION['email'])){
     header("Location: connexion.php");
-}else {*/
+}else {
 
 
     $idProduit = postVar("id");
@@ -38,5 +38,4 @@ if (empty($_SESSION['email'])){
         echo "ca ne marche pas ";
     }
 
-
-//}
+}

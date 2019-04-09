@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     </head>
     <body>
-        <?php include("menu.php"); ?>
+        <?php include("menu.php"); session_destroy(); ?>
 
         <div id="container_profil">
             <div>

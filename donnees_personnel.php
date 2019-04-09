@@ -1,15 +1,7 @@
 <?php
 include("function.php");
 
-if (empty($_SESSION['email'])){
-    header("Location: connexion.php");
-}else{
 
-    $bdd = getbdd();
-
-    $donnees = getAllClient($bdd, $_SESSION['email']);
-
-}
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,7 +13,19 @@ if (empty($_SESSION['email'])){
         <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     </head>
     <body>
-        <?php include("menu.php"); ?>
+        <?php include("menu.php");
+
+        if (empty($_SESSION['email'])){
+            header("Location: connexion.php");
+        }else{
+
+            $bdd = getbdd();
+
+            $donnees = getAllClient($bdd, $_SESSION['email']);
+
+        }
+
+        ?>
 
         <form action="updateClient.php" method="post" class="msform form_inscription">
             <fieldset>

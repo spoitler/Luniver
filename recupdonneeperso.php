@@ -4,7 +4,9 @@ include_once ("menu.php");
 
 include("function.php");
 
+
 if (empty($_SESSION['email'])){
+    echo "test";
     header("Location: connexion.php");
 }else{
 
@@ -12,5 +14,5 @@ if (empty($_SESSION['email'])){
 
     $donnees = getAllClient($bdd, $_SESSION['email']);
 
-   header("Location: donnees_personnel.php");
+    header("Location: donnees_personnel.php");
 }
