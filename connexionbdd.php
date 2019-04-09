@@ -33,7 +33,7 @@ if ($email && $password){
 
     $passwordCorrect = hash("sha512",$password);
 
-    if ($passwordCorrect) {
+    if ($passwordCorrect == $password) {
         echo "connecté";
         header('Location: recupdonneeperso.php');
     }
