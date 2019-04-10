@@ -3,6 +3,7 @@
 session_start();
 
 ?>
+<link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
 <div class="menu">
     <nav>
         <div class="toggle">
@@ -19,12 +20,21 @@ session_start();
                 <li><a href="a_propos.php">A PROPOS</a></li>
                 <li><a href="revendeur.php">REVENDEUR</a></li>
                 <li><a href="contact.php">CONTACT</a></li>
-                <li><?php if (empty($_SESSION['email'])){
-                        echo '<a href="connexion.php">CONNEXION / INSCRIPTION</a>';
+                <?php if (empty($_SESSION['email'])){
+                        echo '<li><a href="connexion.php">CONNEXION / INSCRIPTION</a></li>';
                     }else{
-                        echo '<a href="profil.php">MON COMPTE</a>';
+                        echo '
+                                <li id="accordion" class="accordion">
+                                    <div class="link"><span>MON COMPTE</span><i class="fa fa-chevron-down"></i></div>
+                                    <ul class="submenu" id="dropdown_menu">
+                                      <li><a class="accordeon_cont" href="#">Commandes</a></li>
+                                      <li><a class="accordeon_cont" href="#">Favoris</a></li>
+                                      <li><a class="accordeon_cont" href="#">Données Personnel</a></li>
+                                    </ul>
+                                </li>
+                                                    
+                       ';
                     }?>
-                </li>
             </ul>
         </div>
     </nav>
@@ -35,3 +45,4 @@ session_start();
 </div>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script  src="js/menu.js"></script>
+<script  src="js/accordeon.js"></script>

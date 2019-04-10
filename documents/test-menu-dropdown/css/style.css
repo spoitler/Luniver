@@ -1,40 +1,15 @@
 * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
+
+  /* -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  box-sizing: border-box; */
 }
 
-body {
-  background: #2d2c41;
-  font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma;
-}
-
-ul { list-style-type: none; }
-
-a {
-  color: #b63b4d;
-  text-decoration: none;
-}
 
 /** =======================
  * Contenedor Principal
  ===========================*/
 
-
-h1 {
-  color: #FFF;
-  font-size: 24px;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 80px;
-}
-
-h1 a {
-  color: #c12c42;
-  font-size: 16px;
-}
 
 .accordion {
   width: 100%;
@@ -50,7 +25,7 @@ h1 a {
   cursor: pointer;
   display: block;
   padding: 15px 15px 15px 42px;
-  color: #4D4D4D;
+  color: #000;
   font-size: 14px;
   font-weight: 700;
   border-bottom: 1px solid #CCC;
@@ -58,6 +33,9 @@ h1 a {
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .accordion li:last-child .link { border-bottom: 0; }
@@ -79,9 +57,9 @@ h1 a {
   font-size: 16px;
 }
 
-.accordion li.open .link { color: #b63b4d; }
+.accordion li.open .link { color: #0951EE; }
 
-.accordion li.open i { color: #b63b4d; }
+.accordion li.open i { color: #0951EE; }
 
 .accordion li.open i.fa-chevron-down {
   -webkit-transform: rotate(180deg);
@@ -97,7 +75,7 @@ h1 a {
 
 .submenu {
   display: none;
-  background: #444359;
+  background: #fff;
   font-size: 14px;
 }
 
@@ -106,7 +84,7 @@ h1 a {
 .submenu a {
   display: block;
   text-decoration: none;
-  color: #d9d9d9;
+  color: #000;
   padding: 12px;
   padding-left: 42px;
   -webkit-transition: all 0.25s ease;
@@ -115,6 +93,6 @@ h1 a {
 }
 
 .submenu a:hover {
-  background: #b63b4d;
+  background: #0951EE;
   color: #FFF;
 }
