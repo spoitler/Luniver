@@ -23,17 +23,14 @@ session_start();
                 <?php if (empty($_SESSION['email'])){
                         echo '<li><a href="connexion.php">CONNEXION / INSCRIPTION</a></li>';
                     }else{
-                        echo '
-                                <li id="accordion" class="accordion">
-                                    <div class="link"><span>MON COMPTE</span><i class="fa fa-chevron-down"></i></div>
-                                    <ul class="submenu" id="dropdown_menu">
-                                      <li><a class="accordeon_cont" href="#">Commandes</a></li>
-                                      <li><a class="accordeon_cont" href="#">Favoris</a></li>
-                                      <li><a class="accordeon_cont" href="recupdonneeperso.php">Données personnelles</a></li>
-                                    </ul>
-                                </li>
-                                                    
-                       ';
+                        echo '<li id="accordion" class="accordion">
+                                <div class="link"><span>MON COMPTE</span><i class="fa fa-chevron-down"></i></div>
+                                <ul class="submenu" id="dropdown_menu">
+                                  <li><a class="accordeon_cont" href="#">Commandes</a></li>
+                                  <li><a class="accordeon_cont" href="#">Favoris</a></li>
+                                  <li><a class="accordeon_cont" href="recupdonneeperso.php">Données personnelles</a></li>
+                                </ul>
+                            </li>';
                     }?>
             </ul>
         </div>

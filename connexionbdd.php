@@ -22,7 +22,7 @@ if ($email && $password){
 
     echo "connecté a la bdd<br>";
 
-    $query = "SELECT email, password FROM client WHERE email=:email";
+    $query = "SELECT email,Admin, password FROM client WHERE email=:email";
 
     $verification = $bdd->prepare($query);
     $verification->bindParam(":email", $email);
@@ -35,6 +35,7 @@ if ($email && $password){
     if ($passwordCorrect == $passwordbdd) {
         echo "connecté";
         $_SESSION['email'] = $email;
+        $_SESSION['type'] = $resultat['Admin'];
         //header('Location: recupdonneeperso.php');
         header('Location: index.php');
     }else{
