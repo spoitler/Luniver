@@ -29,7 +29,7 @@ session_start();
                                     <ul class="submenu" id="dropdown_menu">
                                       <li><a class="accordeon_cont" href="#">Commandes</a></li>
                                       <li><a class="accordeon_cont" href="#">Favoris</a></li>
-                                      <li><a class="accordeon_cont" href="#">Données Personnel</a></li>
+                                      <li><a class="accordeon_cont" href="recupdonneeperso.php">Données personnelles</a></li>
                                     </ul>
                                 </li>
                                                     
