@@ -144,6 +144,7 @@ nav .toggle-active span:last-of-type {
 
 .nav-wrapper ul li:hover:before {
     left: 0;
+
 }
 
 .nav-wrapper ul li a {
@@ -152,6 +153,9 @@ nav .toggle-active span:last-of-type {
     margin: 0;
     text-decoration: none;
     color: #000;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
 }
 
 .nav-wrapper ul .current:before {
@@ -314,13 +318,39 @@ nav .toggle-active span:last-of-type {
     text-align: center;
 }
 
-#container_shop p{
+.container_produit_boutique{
     display: inline-block;
-    margin: 0 20px 30px 20px;
+    margin: 0 10px 30px 10px;
+    width: auto;
+    border: solid 1px black;
+}
+
+#container_shop p:first-child{
+    margin: 10px 0px 10px 0px;
+}
+
+.ligne_produit_boutique{
+    height: 1px;
+    width: auto;
+    margin: 0 13px 0 13px;
+    background-color: #595959;
+}
+
+.desc_produit_boutique{
+    margin: 0;
+}
+
+.desc_produit_boutique p:first-child{
+    //border-top: solid 1px black;
+}
+
+.desc_produit_boutique p{
+    font-size: 14px;
+    padding: 0 10px 0 10px;
 }
 
 #container_shop img{
-    height: 113px;
+    height: 125px;
     width: auto;
 }
 

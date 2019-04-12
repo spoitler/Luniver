@@ -10,81 +10,186 @@
     <body>
         <?php include("menu.php"); ?>
         <div id="container_shop">
-            <p>
-                <a href="#">
-                    <img src="img/produit1.jpg" alt="">
-                </a>
-            </p>
-            <p>
-                <a href="#">
-                    <img src="img/produit2.jpg" alt="">
-                </a>
-            </p>
-            <p>
-                <a href="#">
-                    <img src="img/produit3.jpg" alt="">
-                </a>
-            </p>
-            <p>
-                <a href="#">
-                    <img src="img/produit1.jpg" alt="">
-                </a>
-            </p>
-            <p>
-                <a href="#">
-                    <img src="img/produit2.jpg" alt="">
-                </a>
-            </p>
-            <p>
-                <a href="#">
-                    <img src="img/produit3.jpg" alt="">
-                </a>
-            </p>
-            <p>
-                <a href="#">
-                    <img src="img/produit1.jpg" alt="">
-                </a>
-            </p>
-            <p>
-                <a href="#">
-                    <img src="img/produit2.jpg" alt="">
-                </a>
-            </p>
-            <p>
-                <a href="#">
-                    <img src="img/produit1.jpg" alt="">
-                </a>
-            </p>
-            <p>
-                <a href="#">
-                    <img src="img/produit3.jpg" alt="">
-                </a>
-            </p>
-            <p>
-                <a href="#">
-                    <img src="img/produit3.jpg" alt="">
-                </a>
-            </p>
-            <p>
-                <a href="#">
-                    <img src="img/produit1.jpg" alt="">
-                </a>
-            </p>
-            <p>
-                <a href="#">
-                    <img src="img/produit2.jpg" alt="">
-                </a>
-            </p>
-            <p>
-                <a href="#">
-                    <img src="img/produit3.jpg" alt="">
-                </a>
-            </p>
-            <p>
-                <a href="#">
-                    <img src="img/produit1.jpg" alt="">
-                </a>
-            </p>
+            <div class="container_produit_boutique">
+                <p>
+                    <a href="#">
+                        <img src="img/produit1.jpg" alt="">
+                    </a>
+                </p>
+                <div class="ligne_produit_boutique"></div>
+                <div class="desc_produit_boutique">
+                    <p>TEE - SHIRT NOIR</p>
+                    <p>50€</p>
+                </div>
+            </div>
+            <div class="container_produit_boutique">
+                <p>
+                    <a href="#">
+                        <img src="img/produit2.jpg" alt="">
+                    </a>
+                </p>
+                <div class="ligne_produit_boutique"></div>
+                <div class="desc_produit_boutique">
+                    <p>TEE - SHIRT NOIR</p>
+                    <p>50€</p>
+                </div>
+            </div>
+            <div class="container_produit_boutique">
+                <p>
+                    <a href="#">
+                        <img src="img/produit3.jpg" alt="">
+                    </a>
+                </p>
+                <div class="ligne_produit_boutique"></div>
+                <div class="desc_produit_boutique">
+                    <p>TEE - SHIRT NOIR</p>
+                    <p>50€</p>
+                </div>
+            </div>
+            <div class="container_produit_boutique">
+                <p>
+                    <a href="#">
+                        <img src="img/produit1.jpg" alt="">
+                    </a>
+                </p>
+                <div class="ligne_produit_boutique"></div>
+                <div class="desc_produit_boutique">
+                    <p>TEE - SHIRT NOIR</p>
+                    <p>50€</p>
+                </div>
+            </div>
+            <div class="container_produit_boutique">
+                <p>
+                    <a href="#">
+                        <img src="img/produit2.jpg" alt="">
+                    </a>
+                </p>
+                <div class="ligne_produit_boutique"></div>
+                <div class="desc_produit_boutique">
+                    <p>TEE - SHIRT NOIR</p>
+                    <p>50€</p>
+                </div>
+            </div>
+            <div class="container_produit_boutique">
+                <p>
+                    <a href="#">
+                        <img src="img/produit3.jpg" alt="">
+                    </a>
+                </p>
+                <div class="ligne_produit_boutique"></div>
+                <div class="desc_produit_boutique">
+                    <p>TEE - SHIRT NOIR</p>
+                    <p>50€</p>
+                </div>
+            </div>
+            <div class="container_produit_boutique">
+                <p>
+                    <a href="#">
+                        <img src="img/produit1.jpg" alt="">
+                    </a>
+                </p>
+                <div class="ligne_produit_boutique"></div>
+                <div class="desc_produit_boutique">
+                    <p>TEE - SHIRT NOIR</p>
+                    <p>50€</p>
+                </div>
+            </div>
+            <div class="container_produit_boutique">
+                <p>
+                    <a href="#">
+                        <img src="img/produit2.jpg" alt="">
+                    </a>
+                </p>
+                <div class="ligne_produit_boutique"></div>
+                <div class="desc_produit_boutique">
+                    <p>TEE - SHIRT NOIR</p>
+                    <p>50€</p>
+                </div>
+            </div>
+            <div class="container_produit_boutique">
+                <p>
+                    <a href="#">
+                        <img src="img/produit1.jpg" alt="">
+                    </a>
+                </p>
+                <div class="ligne_produit_boutique"></div>
+                <div class="desc_produit_boutique">
+                    <p>TEE - SHIRT NOIR</p>
+                    <p>50€</p>
+                </div>
+            </div>
+            <div class="container_produit_boutique">
+                <p>
+                    <a href="#">
+                        <img src="img/produit3.jpg" alt="">
+                    </a>
+                </p>
+                <div class="ligne_produit_boutique"></div>
+                <div class="desc_produit_boutique">
+                    <p>TEE - SHIRT NOIR</p>
+                    <p>50€</p>
+                </div>
+            </div>
+            <div class="container_produit_boutique">
+                <p>
+                    <a href="#">
+                        <img src="img/produit3.jpg" alt="">
+                    </a>
+                </p>
+                <div class="ligne_produit_boutique"></div>
+                <div class="desc_produit_boutique">
+                    <p>TEE - SHIRT NOIR</p>
+                    <p>50€</p>
+                </div>
+            </div>
+            <div class="container_produit_boutique">
+                <p>
+                    <a href="#">
+                        <img src="img/produit1.jpg" alt="">
+                    </a>
+                </p>
+                <div class="ligne_produit_boutique"></div>
+                <div class="desc_produit_boutique">
+                    <p>TEE - SHIRT NOIR</p>
+                    <p>50€</p>
+                </div>
+            </div>
+            <div class="container_produit_boutique">
+                <p>
+                    <a href="#">
+                        <img src="img/produit2.jpg" alt="">
+                    </a>
+                </p>
+                <div class="ligne_produit_boutique"></div>
+                <div class="desc_produit_boutique">
+                    <p>TEE - SHIRT NOIR</p>
+                    <p>50€</p>
+                </div>
+            </div>
+            <div class="container_produit_boutique">
+                <p>
+                    <a href="#">
+                        <img src="img/produit3.jpg" alt="">
+                    </a>
+                </p>
+                <div class="ligne_produit_boutique"></div>
+                <div class="desc_produit_boutique">
+                    <p>TEE - SHIRT NOIR</p>
+                    <p>50€</p>
+                </div>
+            </div>
+            <div class="container_produit_boutique">
+                <p>
+                    <a href="#">
+                        <img src="img/produit1.jpg" alt="">
+                    </a>
+                </p>
+                <div class="ligne_produit_boutique"></div>
+                <div class="desc_produit_boutique">
+                    <p>TEE - SHIRT NOIR</p>
+                    <p>50€</p>
+                </div>
+            </div>
         </div>
         <?php include("footer.php"); ?>
     </body>
