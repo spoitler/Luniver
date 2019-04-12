@@ -322,6 +322,7 @@ nav .toggle-active span:last-of-type {
     display: inline-block;
     margin: 0 10px 30px 10px;
     width: 43%;
+    max-width: 200px;
     border: solid 1px black;
 }
 
