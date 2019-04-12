@@ -321,7 +321,7 @@ nav .toggle-active span:last-of-type {
 .container_produit_boutique{
     display: inline-block;
     margin: 0 10px 30px 10px;
-    width: auto;
+    width: 43%;
     border: solid 1px black;
 }
 
@@ -350,8 +350,10 @@ nav .toggle-active span:last-of-type {
 }
 
 #container_shop img{
-    height: 125px;
-    width: auto;
+    /*height: 125px;*/
+    /*width: auto;*/
+    height: auto;
+    width: 100%;
 }
 
 /*******************\
