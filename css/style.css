@@ -27,6 +27,16 @@ a{
         MENU
 \******************/
 
+#checkbox_menu{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 0px;
+    left: 1px;
+    margin: 0;
+    padding: 0;
+}
+
 nav {
     width: 110px;
     height: 100%;
