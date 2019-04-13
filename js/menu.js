@@ -4,5 +4,5 @@ $( ".toggle" ).click(function() {
   $( ".nav-wrapper" ).toggleClass( "nav-wrapper-active" );
   $(".nav-overlay").fadeToggle(300);
   $("ul").toggleClass('active');
-  $("html").toggleClass('active');
+  $("html").toggleClass('scroll');
 });
