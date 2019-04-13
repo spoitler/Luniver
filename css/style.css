@@ -12,6 +12,11 @@ body, html {
     margin: 0;
     font-family: Arial, sans-serif;
     min-height: 100vh;
+    overflow: visible;
+}
+
+.active{
+    overflow: hidden;
 }
 
 a{
@@ -592,6 +597,48 @@ nav .toggle-active span:last-of-type {
     position: relative;
     left: 46%;
 }
+
+/*******************\
+    PAGE PRODUIT
+\*******************/
+
+#container_produit{
+    position: relative;
+    top: 150px;
+    height: auto;
+    text-align: center;
+}
+
+#previsu_img_produit{
+    position: relative;
+}
+
+#img_principale_produit{
+    height: 200px;
+    width: auto;
+}
+
+
+#mini_img_produit{
+    display: flex;
+    height : auto;
+    width: 100%;
+    justify-content: center;
+}
+#mini_img_produit img{
+    height: 100px;
+    width: auto;
+}
+
+#info_produit{
+    text-align: left;
+    margin: 0px 0px 0px 50px;
+}
+
+#quantite_produit, #taille_produit{
+    display: flex;
+}
+
 
 /****************\
       FOOTER
