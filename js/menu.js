@@ -11,7 +11,6 @@ $( ".toggle" ).click(function() {
 function valcheckbox() {
   var checkBox = document.getElementById("checkbox_menu");
   var body = document.getElementById("body");
-  alert("test");
   if (checkBox.checked){
     body.style.position = "fixed";
   } else {
