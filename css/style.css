@@ -12,7 +12,6 @@ body, html {
     margin: 0;
     font-family: Arial, sans-serif;
     min-height: 100vh;
-    overflow: visible;
 }
 
 .active{
