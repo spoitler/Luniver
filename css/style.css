@@ -178,7 +178,6 @@ nav .toggle-active span:last-of-type {
 }
 
 .nav-wrapper-active {
-    overflow-y: hidden;
     width: 80%;
     left: 0px;
     transition: 0.5s;
