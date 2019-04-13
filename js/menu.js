@@ -5,5 +5,5 @@ $( ".toggle" ).click(function() {
   $(".nav-overlay").fadeToggle(300);
   $("ul").toggleClass('active');
   $("body").toggleClass('scroll');
- // $('body').bind('touchmove', function(e){e.preventDefault()})
+  $('body').bind('touchmove', function(e){e.preventDefault()})
 });
