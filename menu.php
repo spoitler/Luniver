@@ -12,7 +12,7 @@ session_start();
                 <span></span>
                 <span></span>
             </div>
-            <input type="checkbox" id="checkbox_menu" hidden onclick="valcheckbox()">
+            <input type="checkbox" id="checkbox_menu" onclick="valcheckbox()">
         </div>
         <div class="nav-wrapper">
             <ul>
