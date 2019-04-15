@@ -12,7 +12,7 @@ include("function.php");
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     </head>
-    <body>
+    <body id="body">
         <?php include("menu.php");
 
         if (empty($_SESSION['email'])){

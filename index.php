@@ -8,7 +8,7 @@
        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
        <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
    </head>
-   <body>
+   <body id="body">
       <?php include("menu.php"); ?>
       <div id="container_home">
          <p>

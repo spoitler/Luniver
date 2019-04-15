@@ -82,3 +82,31 @@ function getClients(PDO $bdd) {
     return $resultat->fetchAll(PDO::FETCH_OBJ);
 }
 
+function getAllProduitById(PDO $bdd, $idProduit) {
+    // La requete de base
+    $query = "SELECT id_produit,nom_produit,prix,description,image,quantite_stock FROM produit WHERE id_produit=:idProduit";
+    // On récupère tout le contenu de la table
+
+    $resultat = $bdd->prepare($query);
+
+    $resultat->bindParam(":idProduit", $idProduit);
+
+    $resultat->execute();
+
+    return $resultat->fetch(PDO::FETCH_OBJ);
+
+}
+
+function getProduits(PDO $bdd) {
+    // La requete de base
+    $query = "SELECT * FROM produit";
+
+    // Etape 1
+    $resultat = $bdd->prepare($query);
+    // Etape 2
+    $resultat->execute();
+
+
+    return $resultat->fetchAll(PDO::FETCH_OBJ);
+}
+

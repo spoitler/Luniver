@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
 
 </head>
-<body>
+<body id="body">
     <?php include("menu.php"); ?>
     <!-- multistep form -->
     <form action="newclient.php" method="post" class="msform form_inscription">

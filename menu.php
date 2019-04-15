@@ -41,6 +41,12 @@ session_start();
 <div class="title_tel">
     <h1><a href="index.php">LUNIVER</a></h1>
 </div>
+<div>
+    <a href="panier.php">
+        <img id="img_shopping_cart" src="img/shopping-cart-vide.png">
+        <div id="notification-icon"><p><span>5</span></p></div>
+    </a>
+</div>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script  src="js/menu.js"></script>
 <script  src="js/accordeon.js"></script>

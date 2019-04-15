@@ -204,6 +204,38 @@ nav .toggle-active span:last-of-type {
     display: none;
 }
 
+#img_shopping_cart{
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    height: 30px;
+    width: auto;
+}
+
+#notification-icon{
+
+}
+
+#notification-icon p{
+    z-index: 99;
+}
+
+#notification-icon span{
+    position: absolute;
+    top: 32px;
+    right: 10px;
+    height: 17px;
+    width: 17px;
+    //border: solid 1px black;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    background-color: #0951EE;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
 /** =======================
  * accordeon
  ===========================*/
@@ -589,17 +621,6 @@ nav .toggle-active span:last-of-type {
     border-radius: 50%;
 }
 
-/*****************\
-    PAGE PROFIL
-\*****************/
-
-#container_profil{
-    position: relative;
-    top: 150px;
-    height: auto;
-    text-align: center;
-}
-
 /***********************\
     PAGE LISTECLIENT
 \***********************/
@@ -648,8 +669,347 @@ nav .toggle-active span:last-of-type {
 
 #quantite_produit, #taille_produit{
     display: flex;
+    position: relative;
 }
 
+#input_quantite_produit{
+    height: 25px;
+    width: 30px;
+    margin: 0 0 0 10px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin:0;
+}
+
+/* Opéra*/
+input::-o-inner-spin-button,
+input::-o-outer-spin-button {
+    -o-appearance: none;
+    margin:0;
+}
+
+#taille{
+    display: flex;
+    top: 60%;
+    left: 50%;
+    transform: translate(10%, 30%);
+}
+
+.cont_taille_produit{
+    position: relative;
+}
+
+.taille_produit{
+    padding: 10px 20px;
+    margin: 5px;
+    position: relative;
+    background-color: #0951EE;
+    border: none;
+    color: #fff;
+}
+
+.radio_taille_produit{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+
+#radioS:checked ~ label[for='radioS'],#radioM:checked ~ label[for='radioM'],#radioL:checked ~ label[for='radioL']{
+    background-color: red;
+}
+
+.btn-add-to-cart {
+    color: white;
+    padding: 1rem 1.6rem;
+    background-color: #0951EE;
+    min-width: 130px;
+    min-height: 16px;
+    border-radius: 1px;
+}
+
+.btn-add-to-cart:hover{
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #0951ee;
+}
+
+.btn-add-to-cart__icon-validate {
+    transition: all .2s ease;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 10px;
+    height: 6px;
+    display: none;
+    transform: rotate(-45deg);
+    border-bottom: 2px solid transparent;
+}
+.btn-add-to-cart__icon-validate-inside {
+    transition: all .2s ease;
+    height: 6px;
+    width: 10px;
+    position: absolute;
+    border-left: 2px solid transparent;
+}
+.btn-add-to-cart__text {
+    padding-left: 12px;
+    height: 16px;
+}
+
+.btn-add-to-cart-validate {
+    background-color: #000;
+    min-width: 130px;
+    min-height: 16px;
+}
+.btn-add-to-cart-validate .btn-add-to-cart__content {
+    position: relative;
+}
+.btn-add-to-cart-validate .btn-add-to-cart__content .icon-plus {
+    display: none !important;
+}
+.btn-add-to-cart-validate .btn-add-to-cart__icon-validate {
+    display: inline-block !important;
+    animation: .5s ease animation1 forwards;
+    animation-delay: .1s;
+}
+.btn-add-to-cart-validate .btn-add-to-cart__icon-validate-inside {
+    animation: .5s ease animation2 forwards;
+}
+.btn-add-to-cart-validate .btn-add-to-cart__text {
+    padding-left: 24px;
+    height: 16px;
+}
+
+@keyframes animation1 {
+    from {
+        border-bottom: 2px solid transparent;
+    }
+    to {
+        border-bottom: 2px solid white;
+    }
+}
+@keyframes animation2 {
+    from {
+        border-left: 2px solid transparent;
+    }
+    to {
+        border-left: 2px solid white;
+    }
+}
+.icon-plus {
+    background-color: transparent;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.icon-plus:after {
+    background-color: #fff;
+    width: 10px;
+    height: 2px;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    position: absolute;
+    top: 7px;
+    left: 4px;
+    content: "";
+}
+
+.icon-plus:before {
+    background-color: #fff;
+    width: 2px;
+    height: 10px;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    content: "";
+}
+
+.btn {
+    font-family: 'Helvetica';
+    display: inline-block;
+    text-decoration: none;
+    margin: auto;
+    transition: all .3s ease;
+}
+.btn__content {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+#trait_detail_produit{
+    height: 1px;
+    width: 80%;
+    background-color: #000;
+}
+
+/******************\
+    PAGE PANIER
+\******************/
+
+
+/*------------------------- 1. Core Css -------------------*/
+
+.row{
+    position: relative;
+    top: 180px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+.card {
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.card:hover {
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.02);
+}
+
+/*------------------------- END Core Css -------------------*/
+
+
+/*-------------------- 22. Invoice ------------------- */
+
+.invoice-area {}
+
+.invoice-head {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #efebeb;
+    padding-bottom: 20px;
+}
+
+.invoice-head .iv-left span {
+    color: #444;
+}
+
+.invoice-head span {
+    font-size: 21px;
+    font-weight: 700;
+    color: #777;
+}
+
+.invoice-address h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.invoice-address h5 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.invoice-address p {
+    font-size: 15px;
+    color: #555;
+}
+
+.invoice-date li {
+    font-size: 15px;
+    color: #555;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.invoice-table {}
+
+.invoice-table .table-bordered td,
+.invoice-table .table-bordered th {
+    border: 1px solid rgba(120, 130, 140, 0.13) !important;
+    border-left: none!important;
+    border-right: none!important;
+}
+
+.invoice-table tr td {
+    color: #666;
+}
+
+.invoice-table tfoot tr td {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #444;
+}
+
+.invoice-buttons a {
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    background: #815ef6;
+    padding: 12px 19px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    margin-left: 6px;
+}
+
+.invoice-buttons a:hover {
+    background: #574494;
+}
+
+.table{
+    text-align: right !important;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.text-capitalize{
+    text-transform: capitalize !important;
+}
+
+.table td, .table th{
+    padding: .75rem;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.text-left{
+    text-align: left !important;
+}
+
+.img_panier{
+    height: 120px;
+    width: auto;
+}
+
+/*-------------------- END Invoice ------------------- */
 
 /****************\
       FOOTER
