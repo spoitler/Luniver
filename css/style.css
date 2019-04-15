@@ -206,14 +206,14 @@ nav .toggle-active span:last-of-type {
 
 #img_shopping_cart{
     position: absolute;
-    top: 35px;
-    right: 20px;
+    top: 20px;
+    right: 25px;
     height: 30px;
     width: auto;
 }
 
-#notification-icon{
-
+#shopping-cart{
+    position: relative;
 }
 
 #notification-icon p{
@@ -222,8 +222,8 @@ nav .toggle-active span:last-of-type {
 
 #notification-icon span{
     position: absolute;
-    top: 32px;
-    right: 10px;
+    top: 17px;
+    right: 17px;
     height: 17px;
     width: 17px;
     //border: solid 1px black;

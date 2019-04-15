@@ -41,7 +41,7 @@ session_start();
 <div class="title_tel">
     <h1><a href="index.php">LUNIVER</a></h1>
 </div>
-<div>
+<div id="shopping-cart">
     <a href="panier.php">
         <img id="img_shopping_cart" src="img/shopping-cart-vide.png">
         <div id="notification-icon"><p><span>5</span></p></div>
