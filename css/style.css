@@ -205,17 +205,19 @@ nav .toggle-active span:last-of-type {
 }
 
 #img_shopping_cart{
-    position: relative;
-    top: 17px;
-    right: 25px;
+    padding-top: 5px;
     height: 30px;
     width: auto;
 }
 
 #shopping-cart{
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 35px;
+    right: 25px;
+}
+
+#shopping-cart a{
+    height: 50px;
     display: flex;
 }
 
@@ -224,9 +226,8 @@ nav .toggle-active span:last-of-type {
 }
 
 #notification-icon {
-    position: relative;
-    top: -20px;
-    right: 5px;
+    position: absolute;
+    right: -10px;
     height: 17px;
     width: 17px;
     //border: solid 1px black;
