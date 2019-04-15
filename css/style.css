@@ -205,25 +205,28 @@ nav .toggle-active span:last-of-type {
 }
 
 #img_shopping_cart{
-    position: absolute;
-    top: 20px;
+    position: relative;
+    top: 17px;
     right: 25px;
     height: 30px;
     width: auto;
 }
 
 #shopping-cart{
-    position: relative;
-}
-
-#notification-icon p{
-    z-index: 99;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
 }
 
 #notification-icon span{
-    position: absolute;
-    top: 17px;
-    right: 17px;
+    z-index: 99;
+}
+
+#notification-icon {
+    position: relative;
+    top: -20px;
+    right: 5px;
     height: 17px;
     width: 17px;
     //border: solid 1px black;

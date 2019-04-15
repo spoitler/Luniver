@@ -44,7 +44,7 @@ session_start();
 <div id="shopping-cart">
     <a href="panier.php">
         <img id="img_shopping_cart" src="img/shopping-cart-vide.png">
-        <div id="notification-icon"><p><span>5</span></p></div>
+        <div id="notification-icon"><span>5</span></div>
     </a>
 </div>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
