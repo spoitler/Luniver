@@ -222,18 +222,20 @@ nav .toggle-active span:last-of-type {
 }
 
 #notification-icon span{
-    height: 18px;
-    width: 18px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     z-index: 99;
-    vertical-align: middle;
 }
 
 #notification-icon {
     position: absolute;
     top: 1px;
     right: -8px;
-    height: 18px;
-    width: 18px;
+    height: 19px;
+    width: 19px;
     //border: solid 1px black;
     border-radius: 50%;
     margin: 0;
@@ -241,7 +243,7 @@ nav .toggle-active span:last-of-type {
     background-color: #0951EE;
     color: white;
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 /** =======================
