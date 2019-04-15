@@ -222,6 +222,10 @@ nav .toggle-active span:last-of-type {
 }
 
 #notification-icon span{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%,-50%);
     z-index: 99;
     vertical-align: middle;
 }
