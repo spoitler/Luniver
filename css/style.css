@@ -228,7 +228,8 @@ nav .toggle-active span:last-of-type {
 
 #notification-icon {
     position: absolute;
-    right: -10px;
+    top: 1px;
+    right: -8px;
     height: 18px;
     width: 18px;
     //border: solid 1px black;
@@ -238,7 +239,7 @@ nav .toggle-active span:last-of-type {
     background-color: #0951EE;
     color: white;
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 /** =======================
