@@ -33,6 +33,7 @@ session_start();
                                 </ul>
                             </li>';
                     }?>
+                <li><a href="deconnexion.php">DECONNEXION</a></li>
             </ul>
         </div>
     </nav>
