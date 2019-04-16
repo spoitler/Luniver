@@ -901,17 +901,17 @@ input::-o-outer-spin-button {
     background-color: #fff;
 }
 
-.invoice-table tr td {
+.row .invoice-table tr td {
     color: #666;
 }
 
-.invoice-table tfoot tr td {
+.row .invoice-table tfoot tr td {
     text-transform: uppercase;
     font-weight: 600;
     color: #444;
 }
 
-.table{
+.row .table{
     width: 100%;
 }
 
@@ -919,15 +919,15 @@ input::-o-outer-spin-button {
     text-transform: capitalize !important;
 }
 
-.table td, .table th{
+.row .table td, .table th{
     padding: .75rem;
 }
 
-.text-center{
+.row .text-center{
     text-align: center !important;
 }
 
-.text-left{
+.row .text-left{
     text-align: left !important;
 }
 
@@ -936,8 +936,8 @@ input::-o-outer-spin-button {
     flex-direction: column;
 }
 
-.invoice-table .table-bordered td,
-.invoice-table .table-bordered th {
+.row .invoice-table .table-bordered td,
+.row .invoice-table .table-bordered th {
     border: none;
 }
 
