@@ -11,6 +11,13 @@
 <body id="body">
 <?php include("function.php");
 include_once ("menu.php");
+
+$ids = array_keys($_SESSION['panier']);
+//unset($_SESSION['panier'][3]);
+$bdd = getbdd();
+// La requete de base
+$produits = getProduitsPanier($bdd,$ids);
+
 ?>
 
 <div class="row">
@@ -20,28 +27,26 @@ include_once ("menu.php");
                 <table class="table table-bordered table-hover text-right">
                     <thead>
                     <tr class="text-capitalize">
-                        <th class="text-center" style="width: 10%;">produit</th>
-                        <th class="text-left" style="width: 45%; min-width: 130px;">description</th>
-                        <th>quantité</th>
-                        <th style="min-width: 100px">prix</th>
-                        <th>total</th>
+                        <th class="text-center row_table_panier" style="width: 10%;">produit</th>
+                        <th class="text-left row_table_panier" style="width: 45%; min-width: 130px;">description</th>
+                        <th class="row_table_panier">quantité</th>
+                        <th class="row_table_panier" style="min-width: 100px">prix</th>
+                        <th class="row_table_panier">total</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td class="text-center"><img class="img_panier" src="img/produit1.jpg" ></td>
-                        <td class="text-left">Crazy Toys</td>
-                        <td>2</td>
-                        <td>$20</td>
-                        <td>$40</td>
+                   <?php
+                        foreach ($produits as $produit){
+                        ?>
+
+                    <tr class="cont_produit">
+                        <td class="text-center"><p><img class="img_panier" src="<?= $produit->image ?>" ></p></td>
+                        <td id="nom_produit" class="text-left "><?= $produit->nom_produit ?></td>
+                        <td class="details_produit"><p class="title_detail_produit text-capitalize">quantité</p><input id="input_quantite_produit" class="quantite_panier" type="number" value="<?= $_SESSION['panier'][$produit->id_produit] ?>"></td>
+                        <td class="details_produit"><p class="title_detail_produit text-capitalize">prix</p><?= $produit->prix ?></td>
+                        <td class="details_produit"><p class="title_detail_produit text-capitalize">total</p>$40</td>
                     </tr>
-                    <tr>
-                        <td class="text-center"><img class="img_panier" src="img/produit2.jpg" ></td>
-                        <td class="text-left">Beautiful flowers</td>
-                        <td>2</td>
-                        <td>$50</td>
-                        <td>$100</td>
-                    </tr>
+                        <?php }?>
                     </tbody>
                     <tfoot>
                     <tr>
@@ -54,6 +59,5 @@ include_once ("menu.php");
         </div>
     </div>
 </div>
-
 </body>
 </html>

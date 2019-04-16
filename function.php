@@ -110,3 +110,15 @@ function getProduits(PDO $bdd) {
     return $resultat->fetchAll(PDO::FETCH_OBJ);
 }
 
+function getProduitsPanier(PDO $bdd, $ids) {
+    // La requete de base
+    $query = "SELECT * FROM produit WHERE id_produit IN (".implode(",",$ids).")";
+    // On récupère tout le contenu de la table
+    $resultat = $bdd->prepare($query);
+
+    $resultat->execute();
+
+
+    return $resultat->fetchAll(PDO::FETCH_OBJ);
+}
+

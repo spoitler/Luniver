@@ -217,7 +217,7 @@ nav .toggle-active span:last-of-type {
 }
 
 #shopping-cart a{
-    height: 50px;
+    height: auto;
     display: flex;
 }
 
@@ -682,14 +682,17 @@ nav .toggle-active span:last-of-type {
     position: relative;
 }
 
-#input_quantite_produit{
-    height: 25px;
-    width: 30px;
+#quantite_produit #input_quantite_produit{
     margin: 0 0 0 10px;
     position: absolute;
     top: 50%;
     left: 25%;
     transform: translate(-50%, -50%);
+}
+
+#input_quantite_produit{
+    height: 25px;
+    width: 30px;
 }
 
 /* Firefox */
@@ -882,9 +885,214 @@ input::-o-outer-spin-button {
     PAGE PANIER
 \******************/
 
+.row{
+    position: relative;
+    top: 180px;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+.row_table_panier{
+    display: none;
+}
+
+.cardp {
+    border: none;
+    background-color: #fff;
+}
+
+.invoice-table tr td {
+    color: #666;
+}
+
+.invoice-table tfoot tr td {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #444;
+}
+
+.table{
+    width: 100%;
+}
+
+.text-capitalize{
+    text-transform: capitalize !important;
+}
+
+.table td, .table th{
+    padding: .75rem;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.text-left{
+    text-align: left !important;
+}
+
+.cont_produit{
+    display: flex;
+    flex-direction: column;
+}
+
+.invoice-table .table-bordered td,
+.invoice-table .table-bordered th {
+    border: none;
+}
+
+#nom_produit{
+    color: #000;
+}
+
+.img_panier{
+    height: 170px;
+    width: auto;
+}
+
+.details_produit{
+    display: flex;
+}
+
+.quantite_panier{
+    position: relative;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+}
+
+/****************\
+      FOOTER
+\****************/
+
+footer{
+    position: relative;
+    bottom: -200px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.social_media{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width:100%;
+    height: auto;
+    justify-content: center;
+}
+
+.social_icones{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+
+.conditions_ventes{
+    position: relative;
+}
+
+.conditions_ventes p{
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.copyright{
+    text-align: center;
+    padding-bottom: 5px;
+    color: rgb(109, 109, 109);
+}
+
+
+
+
+/******************************\
+    MEDIA SCREEN PAGE PANIER
+\******************************/
+
+@media screen and (min-width: 400px){
+
+    .row{
+        position: relative;
+        top: 180px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 90%;
+        line-height: 1.5;
+        font-family: sans-serif;
+    }
+
+    .row_table_panier{
+        display: table-cell;
+    }
+
+    .cardp {
+        border: none;
+        border-radius: 4px;
+        background-color: #fff;
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+
+    .cardp:hover {
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.02);
+    }
+
+    .table{
+        text-align: right !important;
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 15px;
+    }
+
+    .table td, .table th{
+        padding: .75rem !important;
+    }
+
+    .cont_produit{
+        display: table-row;
+    }
+
+    .invoice-table .table-bordered td,
+    .invoice-table .table-bordered th {
+        border: 1px solid rgba(120, 130, 140, 0.13) !important;
+        border-left: none!important;
+        border-right: none!important;
+    }
+
+    .img_panier{
+        height: 80px;
+        width: auto;
+    }
+
+    .details_produit{
+        display: table-cell;
+    }
+
+    .title_detail_produit{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*------------------------- 1. Core Css -------------------*/
-
+/*
 .row{
     position: relative;
     top: 180px;
@@ -911,7 +1119,7 @@ input::-o-outer-spin-button {
 
 
 /*-------------------- 22. Invoice ------------------- */
-
+/*
 .invoice-area {}
 
 .invoice-head {
@@ -996,6 +1204,7 @@ input::-o-outer-spin-button {
     text-align: right !important;
     width: 100%;
     border-collapse: collapse;
+    font-size: 15px;
 }
 
 .text-capitalize{
@@ -1015,53 +1224,8 @@ input::-o-outer-spin-button {
 }
 
 .img_panier{
-    height: 120px;
+    height: 80px;
     width: auto;
 }
 
 /*-------------------- END Invoice ------------------- */
-
-/****************\
-      FOOTER
-\****************/
-
-footer{
-    position: relative;
-    bottom: -200px;
-    height: auto;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.social_media{
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    width:100%;
-    height: auto;
-    justify-content: center;
-}
-
-.social_icones{
-    height: 50px;
-    width: 50px;
-    margin: 10px;
-}
-
-.conditions_ventes{
-    position: relative;
-}
-
-.conditions_ventes p{
-    width: 100%;
-    font-size: 15px;
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-.copyright{
-    text-align: center;
-    padding-bottom: 5px;
-    color: rgb(109, 109, 109);
-}
-
