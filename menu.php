@@ -2,6 +2,10 @@
 
 session_start();
 
+if (!isset($_SESSION['panier'])){
+    var_dump($_SESSION['panier'] = array());
+}
+
 ?>
 <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
 <div class="menu">
