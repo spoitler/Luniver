@@ -27,50 +27,57 @@
         <div id="info_produit">
             <h3><?= $produit->nom_produit; ?></h3>
             <p><?= $produit->prix; ?> €</p>
-            <div id="quantite_produit">
-                <p>Quantité </p>
-                <input id="input_quantite_produit" type="number" name="quantite">
-            </div>
-            <div id="taille_produit">
-                <p>Taille </p>
-                <div id="taille">
-                    <div class="cont_taille_produit">
-                        <input id="radioS" type="radio" name="radio" class="radio_taille_produit"/>
-                        <label for="radioS" class="taille_produit">S</label>
-                    </div>
-                    <div class="cont_taille_produit">
-                        <input id="radioM" type="radio" name="radio" class="radio_taille_produit"/>
-                        <label for="radioM" class="taille_produit">M</label>
-                    </div>
-                    <div class="cont_taille_produit">
-                        <input id="radioL" type="radio" name="radio" class="radio_taille_produit"/>
-                        <label for="radioL" class="taille_produit">L</label>
+            <form action="addPanier.php" method="get">
+                <div id="quantite_produit">
+                    <p>Quantité</p>
+                        <input id="input_quantite_produit" type="number" name="quantite" required>
+                </div>
+                <div id="taille_produit">
+                    <p>Taille </p>
+                    <div id="taille">
+                        <div class="cont_taille_produit">
+                            <input id="radioS" type="radio" name="radio" class="radio_taille_produit"/>
+                            <label for="radioS" class="taille_produit">S</label>
+                        </div>
+                        <div class="cont_taille_produit">
+                            <input id="radioM" type="radio" name="radio" class="radio_taille_produit"/>
+                            <label for="radioM" class="taille_produit">M</label>
+                        </div>
+                        <div class="cont_taille_produit">
+                            <input id="radioL" type="radio" name="radio" class="radio_taille_produit"/>
+                            <label for="radioL" class="taille_produit">L</label>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <a href="addPanier.php" class="btn btn-add-to-cart">
-                <div class="btn__content btn-add-to-cart__content">
-                    <div class="icon-plus"></div>
-                    <span class="btn-add-to-cart__icon-validate">
-                        <span class="btn-add-to-cart__icon-validate-inside">
+                <a href="addPanier.php" class="btn btn-add-to-cart">
+                    <div class="btn__content btn-add-to-cart__content">
+                        <div class="icon-plus"></div>
+                        <span class="btn-add-to-cart__icon-validate">
+                            <span class="btn-add-to-cart__icon-validate-inside">
+                            </span>
                         </span>
-                    </span>
-                    <span class="btn-add-to-cart__text">Ajouter au panier</span>
-                </div>
-            </a><br><br><br>
+                        <span class="btn-add-to-cart__text">Ajouter au panier </span>
+                    </div>
+                </a><br><br><br>
 
+                <input type="hidden" name="id" value='<?=$produit->id_produit; ?>'>
 
-            <a href="addPanier.php?id=<?= $produit->id_produit; ?>" class="btn btn-add-to-cart">
-                <div class="btn__content btn-add-to-cart__content">
-                    <div class="icon-plus"></div>
-                    <span class="btn-add-to-cart__icon-validate">
-                        <span class="btn-add-to-cart__icon-validate-inside">
+                <button style="display: contents">
+                <span class="btn btn-add-to-cart">
+                    <div class="btn__content btn-add-to-cart__content">
+                        <div class="icon-plus"></div>
+                        <span class="btn-add-to-cart__icon-validate">
+                            <span class="btn-add-to-cart__icon-validate-inside">
+                            </span>
                         </span>
-                    </span>
-                    <span class="btn-add-to-cart__text">Ajouter au panier</span>
-                </div>
-            </a>
+                        <span class="btn-add-to-cart__text">Ajouter au panier</span>
+                    </div>
+<!--                </span>-->
+                </button>
+
+            </form>
+
             <div>
                 <h4>Détails</h4>
                 <div id="trait_detail_produit"></div>
