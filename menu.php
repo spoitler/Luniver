@@ -35,9 +35,10 @@ if (!isset($_SESSION['panier'])){
                                   <li><a class="accordeon_cont" href="#">Favoris</a></li>
                                   <li><a class="accordeon_cont" href="recupdonneeperso.php">Données personnelles</a></li>
                                 </ul>
-                            </li>';
+                            </li>
+                            <li><a href="deconnexion.php">DECONNEXION</a></li>';
                     }?>
-                <li><a href="deconnexion.php">DECONNEXION</a></li>
+
             </ul>
         </div>
     </nav>
@@ -48,7 +49,7 @@ if (!isset($_SESSION['panier'])){
 </div>
 <div id="shopping-cart">
     <a href="panier.php">
-        <img id="img_shopping_cart" src="img/shopping-cart-vide.png">
+        <img id="img_shopping_cart" src="<?php if(array_sum($_SESSION['panier']) == 0){ echo "img/shopping-cart-vide.png";}else{ echo "img/shopping-cart.png";} ?>">
         <div id="notification-icon"><span><?php if(array_sum($_SESSION['panier']) == 0){ echo "0";}else{ echo array_sum($_SESSION['panier']);} ?></span></div>
     </a>
 </div>
