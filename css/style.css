@@ -1012,7 +1012,7 @@ footer{
     MEDIA SCREEN PAGE PANIER
 \******************************/
 
-@media (min-width: 1000px){
+@media (min-width: 600px){
 
     .row{
         position: relative;
