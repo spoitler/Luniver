@@ -2,7 +2,7 @@
 include ('function.php');
 session_start();
 //session_destroy();
-var_dump($_SESSION);
+
 $bdd = getbdd();
 $idProduit = getVar('id');
 
@@ -14,7 +14,7 @@ if (!is_numeric($idProduit)){
     $produit = getAllProduitById($bdd, $idProduit);
     if (!empty($produit)){
         if (!isset($_SESSION['panier'])){
-            var_dump($_SESSION['panier'] = array());
+            $_SESSION['panier'] = array();
         }
         if (isset($_SESSION['panier'][$produit->id_produit])){
             $_SESSION['panier'][$produit->id_produit] += $quantite;

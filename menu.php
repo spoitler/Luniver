@@ -3,7 +3,7 @@
 session_start();
 
 if (!isset($_SESSION['panier'])){
-    var_dump($_SESSION['panier'] = array());
+    $_SESSION['panier'] = array();
 }
 
 ?>
