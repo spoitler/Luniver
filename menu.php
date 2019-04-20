@@ -50,9 +50,11 @@ if (!isset($_SESSION['panier'])){
 <div id="shopping-cart">
     <a href="panier.php">
         <img id="img_shopping_cart" src="<?php if(array_sum($_SESSION['panier']) == 0){ echo "img/shopping-cart-vide.png";}else{ echo "img/shopping-cart.png";} ?>">
-        <div id="notification-icon"><span><?php if(array_sum($_SESSION['panier']) == 0){ echo "0";}else{ echo array_sum($_SESSION['panier']);} ?></span></div>
+        <div id="notification-icon"><span><span id="count"><?= array_sum($_SESSION['panier']) ?></span></span></div>
     </a>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="js/app.js"></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script  src="js/menu.js"></script>
 <script  src="js/accordeon.js"></script>

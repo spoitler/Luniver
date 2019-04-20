@@ -20,4 +20,5 @@
         <p><a href="">CONDITIONS GÉNÉRALES DE VENTES</a></p>
     </div>
     <p class="copyright">Tous droits réservés - LUNIVER © 2019</p>
+
 </footer>
