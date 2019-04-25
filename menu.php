@@ -36,8 +36,10 @@ if (!isset($_SESSION['panier'])){
                                   <li><a class="accordeon_cont" href="recupdonneeperso.php">Données personnelles</a></li>
                                 </ul>
                             </li>
-                            <li><a href="deconnexion.php">DECONNEXION</a></li>';
-                    }?>
+                            <li><a href="deconnexion.php">DECONNEXION</a></li>
+<li><a href="deconnexion.php">DECONNEXION</a></li>
+<li><a href="deconnexion.php">DECONNEXION</a></li>';
+                    }?>!
 
             </ul>
         </div>
