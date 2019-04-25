@@ -37,9 +37,9 @@ if (!isset($_SESSION['panier'])){
                                 </ul>
                             </li>
                             <li><a href="deconnexion.php">DECONNEXION</a></li>
-<li><a href="deconnexion.php">DECONNEXION</a></li>
-<li><a href="deconnexion.php">DECONNEXION</a></li>';
-                    }?>!
+<li><a href="deconnexion.php">TEST 1</a></li>
+<li><a href="deconnexion.php">test 2</a></li>';
+                    }?>!!
 
             </ul>
         </div>
