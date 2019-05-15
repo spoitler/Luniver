@@ -122,3 +122,10 @@ function getProduitsPanier(PDO $bdd, $ids) {
     return $resultat->fetchAll(PDO::FETCH_OBJ);
 }
 
+function qtyPanier($produits){
+	$qty = "";
+	foreach ($produits as $produit) {
+		$qty = $qty . $_SESSION['panier'][$produit->id_produit].",";
+	}
+	return $qty;
+}

@@ -14,6 +14,8 @@
 
 include_once ("menu.php");
 
+$total = 0;
+
 if (isset($_GET['del'])){
     unset($_SESSION['panier'][$_GET['del']]);
     header('Location: panier.php');
@@ -54,27 +56,40 @@ if (empty($ids)){
                                 <td colspan="5" class="text-center"><p>Le panier est vide.</p></td>
                             </tr>';
                         }else{
-                            foreach ($produits as $produit){
-                        ?>
+                            $idsP = "";
+                            $prixP = "";
 
-                    <tr class="cont_produit">
-                        <td class="text-center"><p><img class="img_panier" src="<?= $produit->image ?>" ></p></td>
-                        <td id="nom_produit" class="text-left "><?= $produit->nom_produit ?></td>
-                        <td class="details_produit"><p class="title_detail_produit text-capitalize">quantité</p><input id="input_quantite_produit" class="quantite_panier" type="number" value="<?= $_SESSION['panier'][$produit->id_produit] ?>"></td>
-                        <td class="details_produit"><p class="title_detail_produit text-capitalize">prix</p><?= $produit->prix." €" ?></td>
-                        <td class="details_produit"><p class="title_detail_produit text-capitalize">total</p><?= ($produit->prix)*($_SESSION['panier'][$produit->id_produit])." €" ?></td>
-                        <td ><a href="panier.php?del=<?= $produit->id_produit ?>" <i class="fas fa-trash"></i></a></td>
-                    </tr>
-                        <?php
-                                $total += ($produit->prix)*($_SESSION['panier'][$produit->id_produit]);
+                            foreach ($produits as $produit){
+                                $idsP = $idsP . $produit->id_produit.",";
+                                $prixP = $prixP . $produit->prix.",";
                             }
 
+                            foreach ($produits as $produit){
+
+                             $total += ($produit->prix)*($_SESSION['panier'][$produit->id_produit]['quantite']);
+                        ?>
+
+                            <tr class="cont_produit">
+                                <td class="text-center"><p><img class="img_panier" src="<?= $produit->image ?>" ></p></td>
+                                <td id="nom_produit" class="text-left "><?= $produit->nom_produit ?></td>
+                                <td class="details_produit"><p class="title_detail_produit text-capitalize">quantité</p><select class="form-taille">
+                                   <option value="S">S</option>
+                                   <option value="M">M</option>
+                                   <option value="L">L</option>
+                                </select><input id="input_taille_produit<?= $produit->id_produit ?>" class="quantite_panier" type="text" value="<?= $_SESSION['panier'][$produit->id_produit]['taille'] ?>" onchange="updateTaille(this.value)"></td>
+                                <td class="details_produit"><p class="title_detail_produit text-capitalize">quantité</p><input id="input_quantite_produit<?= $produit->id_produit ?>" class="quantite_panier" type="number" value="<?= $_SESSION['panier'][$produit->id_produit]['quantite'] ?>" onchange="updatePanier(<?= $produit->id_produit; ?>,this.value,<?= $produit->prix; ?>,'<?= $idsP ?>','<?= $prixP ?>')"></td>
+                                <td class="details_produit"><p class="title_detail_produit text-capitalize">prix</p><?= $produit->prix ?> €</td>
+                                <td class="details_produit"><p class="title_detail_produit text-capitalize">total</p><span id="prixProduitQuantite<?= $produit->id_produit;?>"><?= $produit->prix*$_SESSION['panier'][$produit->id_produit]['quantite'] ?></span> €</td>
+                                <td ><a href="panier.php?del=<?= $produit->id_produit ?>"><i class="fas fa-trash"></i></a></td>
+                            </tr>
+                        <?php
+                            }
                         }?>
                     </tbody>
                     <tfoot>
                     <tr>
-                        <td colspan="4">total balance :</td>
-                        <td><?= $total." €" ?></td>
+                        <td colspan="4">prix total :</td>
+                        <td><span id="prixTotalPanier"><?= $total ?></span> €</td>
                     </tr>
                     </tfoot>
                 </table>
@@ -82,7 +97,9 @@ if (empty($ids)){
         </div>
     </div>
 </div>
+<div id=".result"></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/updateQtyPanier.js"></script>
 </body>
 </html>
