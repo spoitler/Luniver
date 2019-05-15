@@ -43,6 +43,7 @@ if (empty($ids)){
                     <tr class="text-capitalize">
                         <th class="text-center row_table_panier" style="width: 10%;">produit</th>
                         <th class="text-left row_table_panier" style="width: 45%; min-width: 130px;">description</th>
+                        <th class="row_table_panier">taille</th>
                         <th class="row_table_panier">quantité</th>
                         <th class="row_table_panier" style="min-width: 100px">prix</th>
                         <th class="row_table_panier">total</th>
@@ -71,14 +72,21 @@ if (empty($ids)){
                              $total += ($produit->prix)*($_SESSION['panier'][$produit->id_produit]['quantite']);
                         ?>
 
-                            <tr class="cont_produit">
-                                <td class="text-center"><p><img class="img_panier" src="<?= $produit->image ?>" ></p></td>
-                                <td id="nom_produit" class="text-left "><?= $produit->nom_produit ?></td>
-                                <td class="details_produit"><p class="title_detail_produit text-capitalize">quantité</p><input id="input_quantite_produit<?= $produit->id_produit ?>" class="quantite_panier" type="number" value="<?= $_SESSION['panier'][$produit->id_produit]['quantite'] ?>" onchange="updatePanier(<?= $produit->id_produit; ?>,this.value,<?= $produit->prix; ?>,'<?= $idsP ?>','<?= $prixP ?>')"></td>
-                                <td class="details_produit"><p class="title_detail_produit text-capitalize">prix</p><?= $produit->prix ?> €</td>
-                                <td class="details_produit"><p class="title_detail_produit text-capitalize">total</p><span id="prixProduitQuantite<?= $produit->id_produit;?>"><?= $produit->prix*$_SESSION['panier'][$produit->id_produit]['quantite'] ?></span> €</td>
-                                <td ><a href="panier.php?del=<?= $produit->id_produit ?>"><i class="fas fa-trash"></i></a></td>
-                            </tr>
+                        <tr class="cont_produit">
+                           <td class="text-center"><p><img class="img_panier" src="<?= $produit->image ?>" ></p></td>
+                           <td id="nom_produit" class="text-left "><?= $produit->nom_produit ?></td>
+                           <td class="details_produit"><p class="title_detail_produit text-capitalize">taille</p>
+                              <select class="form-taille" value="<?= $_SESSION['panier'][] ?>" onchange="updateTaille(this.value)">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                              </select>
+                           </td>
+                           <td class="details_produit"><p class="title_detail_produit text-capitalize">quantité</p><input id="input_quantite_produit<?= $produit->id_produit ?>" class="quantite_panier" type="number" value="<?= $_SESSION['panier'][$produit->id_produit]['quantite'] ?>" onchange="updatePanier(<?= $produit->id_produit; ?>,this.value,<?= $produit->prix; ?>,'<?= $idsP ?>','<?= $prixP ?>')"></td>
+                           <td class="details_produit"><p class="title_detail_produit text-capitalize">prix</p><?= $produit->prix ?> €</td>
+                           <td class="details_produit"><p class="title_detail_produit text-capitalize">total</p><span id="prixProduitQuantite<?= $produit->id_produit;?>"><?= $produit->prix*$_SESSION['panier'][$produit->id_produit]['quantite'] ?></span> €</td>
+                           <td ><a href="panier.php?del=<?= $produit->id_produit ?>"><i class="fas fa-trash"></i></a></td>
+                        </tr>
                         <?php
                             }
                         }?>
