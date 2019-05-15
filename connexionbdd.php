@@ -39,7 +39,7 @@ if ($email && $password){
         //header('Location: recupdonneeperso.php');
         header('Location: index.php');
     }else{
-        echo "t'es nul";
+        header('Location: connexion.php');
     }
 
 }
