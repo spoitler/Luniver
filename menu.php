@@ -4,7 +4,6 @@ session_start();
 
 if (!isset($_SESSION['panier'])){
     $_SESSION['panier'] = array();
-    $_SESSION['panier'][] = array();
 }
 $total = 0;
 
@@ -55,7 +54,7 @@ foreach ($_SESSION['panier'] as $panier) {
 </div>
 <div id="shopping-cart">
     <a href="panier.php">
-        <img id="img_shopping_cart" src="<?php if($total == 0){ echo "img/shopping-cart-vide.png";}else{ echo "img/shopping-cart.png";} ?>">
+        <img id="img_shopping_cart" src="<?php if( $total == 0){ echo "img/shopping-cart-vide.png";}else{ echo "img/shopping-cart.png";} ?>">
         <div id="notification-icon"><span><span id="count"><?= $total ?></span></span></div>
     </a>
 </div>

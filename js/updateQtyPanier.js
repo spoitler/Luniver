@@ -1,7 +1,3 @@
-function updateTaille(taille){
-   alert(taille);
-}
-
 function updatePanier(id,qty,prix,idsP,prixP) {
     var total = 0;
     var httpRequest = false;
@@ -82,8 +78,6 @@ function updatePanier(id,qty,prix,idsP,prixP) {
                 $("#count").empty().append(data.count);
                 $("#prixProduitQuantite"+id).empty().append(prix * qty);
                 $("#prixTotalPanier").empty().append(total);
-
-
             }, "json");
         }
     }else {
