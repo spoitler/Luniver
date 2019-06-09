@@ -1,4 +1,4 @@
-@font-face{
+﻿@font-face{
     font-family: "luniver";
     src: url('../font/Josephin.ttf');
 }
@@ -357,12 +357,15 @@ nav .toggle-active span:last-of-type {
 }
 
 #container_home p{
-    background-color: rgb(61, 61, 61);
-    height: 220px;
+   // background-color: rgb(61, 61, 61);
+    height: 100px;
     margin: 0 0 5px 0;
-    color: #fff;
     text-align: center;
-    font-size: 80px;
+}
+
+#container_home img{
+    height: 100%;
+    width: 100%;
 }
 
 /*******************\
