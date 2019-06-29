@@ -435,17 +435,7 @@ nav .toggle-active span:last-of-type {
     top: 190px;
     height: auto;
     text-align: center;
-}
-
-#container_about_us img{
-    height: auto;
-    width: 100%;
-}
-
-#picture_about_stockist{
-    /*background-color: rgb(61, 61, 61);*/
-    margin: 0 0 5px 0;
-    text-align: center;
+    margin: 0 20%;
 }
 
 #text_about_us{
