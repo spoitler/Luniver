@@ -9,9 +9,6 @@
         ?>
     </head>
     <body>
-
-
-
     <?php
     $id = postVar("id");
     $nom = postVar("nom");

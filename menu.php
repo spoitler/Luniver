@@ -24,25 +24,28 @@ foreach ($_SESSION['panier'] as $panier) {
             <input type="checkbox" id="checkbox_menu" onclick="valcheckbox()">
         </div>
         <div class="nav-wrapper">
-            <ul>
-                <li><a href="index.php">ACCUEIL</a></li>
-                <li><a href="boutique.php">BOUTIQUE</a></li>
-                <li><a href="a_propos.php">A PROPOS</a></li>
-                <li><a href="revendeur.php">REVENDEUR</a></li>
-                <li><a href="contact.php">CONTACT</a></li>
+            <ul class="animation-transition">
+                <li class="border-gray"><a href="index.php">ACCUEIL</a></li>
+                <li class="border-gray"><a href="boutique.php">BOUTIQUE</a></li>
+                <li class="border-gray"><a href="a_propos.php">A PROPOS</a></li>
+                <li class="border-gray"><a href="revendeur.php">REVENDEUR</a></li>
+                <li class="border-gray"><a href="contact.php">CONTACT</a></li>
                 <?php if (empty($_SESSION['email'])){
                         echo '<li><a href="connexion.php">CONNEXION / INSCRIPTION</a></li>';
-                    }else{
-                        echo '<li id="accordion" class="accordion">
-                                <div class="link"><span>MON COMPTE</span><i class="fa fa-chevron-down"></i></div>
-                                <ul class="submenu" id="dropdown_menu">
-                                  <li><a class="accordeon_cont" href="#">Commandes</a></li>
-                                  <li><a class="accordeon_cont" href="#">Favoris</a></li>
-                                  <li><a class="accordeon_cont" href="recupdonneeperso.php">Données personnelles</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="deconnexion.php">DECONNEXION</a></li>';
-                    }?>
+                     }else {
+                        ?><li class="border-gray" id="accordion" class="accordion">
+                          <div class="link">MON COMPTE<i class="fa fa-chevron-down"></i></div>
+                          <ul class="submenu">
+                            <li class="li-submenu"><a href="#">Commandes</a></li>
+                            <li class="li-submenu"><a href="#">Favoris</a></li>
+                            <li class="li-submenu"><a href="#">Données personnelles</a></li>
+                          </ul>
+                        </li>
+                        <li class="border-gray">
+                          <div class="link">DECONNEXION</div>
+                       </li><?php
+                     }
+                    ?>
 
             </ul>
         </div>
@@ -58,7 +61,7 @@ foreach ($_SESSION['panier'] as $panier) {
         <div id="notification-icon"><span><span id="count"><?= $total ?></span></span></div>
     </a>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
 <script src="js/app.js"></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script  src="js/menu.js"></script>
