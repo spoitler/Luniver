@@ -112,11 +112,11 @@ if (empty($ids)){
                     </tbody>
                     <tfoot>
                     <tr>
-                        <td colspan="6">total HT :&nbsp;&nbsp;&nbsp;<span ><?= $total ?></span> €</td>
+                        <td colspan="6">total HT :&nbsp;&nbsp;&nbsp;<span id="prixTotalPanier"><?= $total ?></span> €</td>
                     </tr>
                     </tfoot>
                 </table>
-                
+
             </div>
         </div>
     </div>
