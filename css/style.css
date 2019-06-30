@@ -167,7 +167,6 @@ nav .toggle-active span:last-of-type {
 
 .nav-wrapper ul li:hover:before {
     left: 0;
-
 }
 
 .nav-wrapper ul li a {
@@ -278,7 +277,7 @@ nav .toggle-active span:last-of-type {
    box-sizing: border-box;
  }
 
- .accordion i {
+ #accordion i {
    position: absolute;
    top: 16px;
    left: 12px;
@@ -288,12 +287,12 @@ nav .toggle-active span:last-of-type {
    transition: all 0.4s ease;
  }
 
- .accordion i.fa-chevron-down {
-   right: 20px;
+ #accordion i.fa-chevron-down {
+   right: 50px;
    left: auto;
  }
 
- .accordion.open i.fa-chevron-down {
+ #accordion.open i.fa-chevron-down {
    -webkit-transform: rotate(180deg);
    -ms-transform: rotate(180deg);
    -o-transform: rotate(180deg);
