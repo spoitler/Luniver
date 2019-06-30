@@ -31,18 +31,18 @@ foreach ($_SESSION['panier'] as $panier) {
                 <li class="border-gray"><a href="revendeur.php">REVENDEUR</a></li>
                 <li class="border-gray"><a href="contact.php">CONTACT</a></li>
                 <?php if (empty($_SESSION['email'])){
-                        echo '<li><a href="connexion.php">CONNEXION / INSCRIPTION</a></li>';
+                        echo '<li class="border-gray"><a href="connexion.php">CONNEXION / INSCRIPTION</a></li>';
                      }else {
                         ?><li class="border-gray" id="accordion" class="accordion">
                           <div class="link">MON COMPTE<i class="fa fa-chevron-down"></i></div>
                           <ul class="submenu">
                             <li class="li-submenu"><a href="#">Commandes</a></li>
                             <li class="li-submenu"><a href="#">Favoris</a></li>
-                            <li class="li-submenu"><a href="#">Données personnelles</a></li>
+                            <li class="li-submenu"><a href="recupdonneeperso.php">Données personnelles</a></li>
                           </ul>
                         </li>
                         <li class="border-gray">
-                          <div class="link">DECONNEXION</div>
+                          <div class="link"><a href="deconnexion.php">DECONNEXION</a></div>
                        </li><?php
                      }
                     ?>
