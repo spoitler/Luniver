@@ -735,7 +735,7 @@ input::-o-outer-spin-button {
 }
 
 #radioS:checked ~ label[for='radioS'],#radioM:checked ~ label[for='radioM'],#radioL:checked ~ label[for='radioL']{
-    background-color: lightgrey;
+    background-color: #fff;
     border: solid 3px #0951EE;
     color: #0951EE;
     font-weight: bold;
