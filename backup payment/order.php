@@ -39,6 +39,7 @@ background-color: #fefde5 !important;
 }
       </style>
       <script src="https://js.stripe.com/v3/"></script>
+
       <form action="payment.php" method="post" id="payment-form">
          <input type="text" name="name" value="Romain BONNES">
          <input type="text" name="email" value="romain.bonnes@gmail.com">
@@ -56,7 +57,6 @@ background-color: #fefde5 !important;
 
         <button>Submit Payment</button>
       </form>
-
       <script type="text/javascript">
       // Create a Stripe client.
       var stripe = Stripe('pk_test_FXV2Fb4uZhVPlItRpbChx9sm0008MAPiKO');
@@ -124,12 +124,6 @@ background-color: #fefde5 !important;
       hiddenInput.setAttribute('name', 'stripeToken');
       hiddenInput.setAttribute('value', token.id);
       form.appendChild(hiddenInput);
-
-      var hiddenInputCustomer = document.createElement('input');
-      hiddenInputCustomer.setAttribute('type', 'hidden');
-      hiddenInputCustomer.setAttribute('name', 'stripeCustomer');
-      hiddenInputCustomer.setAttribute('value', token.id);
-      form.appendChild(hiddenInputCustomer);
 
       // Submit the form
       form.submit();

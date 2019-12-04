@@ -665,11 +665,7 @@ nav .toggle-active span:last-of-type {
 }
 
 #quantite_produit #input_quantite_produit{
-    margin: 0 0 0 10px;
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
+    margin: auto 15px;
 }
 
 #input_quantite_produit{
@@ -698,9 +694,7 @@ input::-o-outer-spin-button {
 
 #taille{
     display: flex;
-    top: 60%;
-    left: 50%;
-    transform: translate(10%, 30%);
+   margin: auto 10px;
 }
 
 .cont_taille_produit{
@@ -1130,6 +1124,11 @@ footer{
     .title_detail_produit{
         display: none;
     }
+
+    #container_produit{
+      display: flex;
+      justify-content: center;
+   }
 
 }
 

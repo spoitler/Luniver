@@ -1,7 +1,7 @@
 <?php
 
 function getbdd(){
-	$host = "127.0.0.1";
+	$host = "localhost";
     $dbName = "luniver";
     $login = "admin";
     $password = "ujhcLas3a";

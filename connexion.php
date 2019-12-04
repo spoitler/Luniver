@@ -15,6 +15,7 @@
             <h2 class="fs-title">Connexion</h2>
             <input type="email" name="email" placeholder="Email" required/>
             <input type="password" name="password" placeholder="Mot de passe" required/>
+            <p><a href="#">Mot de passe oublié</a></p>
         </fieldset>
         <div id="submit_inscription">
             <button type="submit" name="submit" class="submit action-button" value="Submit">Connexion</button>
@@ -24,4 +25,3 @@
     <?php include("footer.php"); ?>
     </body>
 </html>
-

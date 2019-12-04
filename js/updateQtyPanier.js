@@ -76,7 +76,7 @@ function updatePanier(id,qty,prix,idsP,prixP) {
         } else {
             $.get('updatePanier.php', {id : id,quantite : qty,prix : prix}, function (data) {
                 $("#count").empty().append(data.count);
-                $("#prixProduitQuantite"+id).empty().append(prix * qty);
+                $("#prixProduitQuantite"+id).empty().append(prix * qty+"€");
                 $("#prixTotalPanier").empty().append(total);
             }, "json");
         }
