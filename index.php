@@ -12,7 +12,7 @@
       <?php include("menu.php"); ?>
       <div id="container_home">
          <p>
-           <img src="#" alt="">
+           <a href="#"><img src="" alt=""></a>
          </p>
          <p>
             <a href="#"><img src="" alt=""></a>
