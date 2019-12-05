@@ -8,9 +8,9 @@
     include_once ("menu.php");
     include_once ("function.php");
     include_once ("header/header.inc.html");
-    if ($_SESSION['type'] != "admin"){
-        header('Location: index.php');
-    }
+    //if ($_SESSION['type'] != "admin"){
+     //   header('Location: index.php');
+    //}
     ?>
 </head>
 

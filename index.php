@@ -11,6 +11,7 @@
    <body id="body">
       <?php include("menu.php"); ?>
       <div id="container_home">
+		<p>Bonjour ceci est un test</p>
          <p>
            <a href="#"><img src="" alt=""></a>
          </p>
