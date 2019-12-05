@@ -870,6 +870,7 @@ input::-o-outer-spin-button {
     top: 140px;
     line-height: 1.5;
     font-family: sans-serif;
+	height:auto;
 }
 
 .row_table_panier{
