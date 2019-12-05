@@ -121,9 +121,6 @@ if (empty($ids)){
         </div>
     </div>
 </div>
-<div id=".result"></div>
-<script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
-<script>paypal.Buttons().render('body');</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/updateQtyPanier.js"></script>
