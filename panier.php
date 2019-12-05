@@ -120,10 +120,8 @@ if (empty($ids)){
             </div>
         </div>
     </div>
-</div>
-<div>
 	<a href="">Confirmer la commande</a>
-</div>
+	</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/updateQtyPanier.js"></script>
